@@ -1,0 +1,115 @@
+@import url(/styles/navbar.css);
+
+/*----------------------------------------PRODUCTO-------------------------------------------------------*/
+
+.nosotros__container {
+  box-sizing: border-box;
+  width: 100vw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8vh;
+  overflow: hidden;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #f5f7f8 100%);
+
+  & h3 {
+    font-family: Inter;
+    font-size: clamp(1.4rem, 0.436rem + 2.571vw, 2.75rem);
+    font-weight: bold;
+    line-height: 42.12px;
+    padding: 2rem;
+    margin: 0 auto;
+  }
+
+  & figure {
+    width: 100%;
+    height: 50vh;
+    margin: 1rem 0;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  & .nosotros__text {
+    width: 50%;
+    font-family: Inter;
+    font-size: clamp(0.8rem, -0.25rem + 3.333vw, 1.55rem);
+    font-weight: 300;
+    line-height: 32px;
+    letter-spacing: 0px;
+    color: #000000;
+    padding: 3rem 7rem;
+
+    overflow: hidden;
+    margin: 0 auto;
+
+    & p > span {
+      display: block;
+      margin-bottom: 1.3rem;
+    }
+
+    & .salud {
+      font-family: Inter;
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 37.44px;
+      letter-spacing: 0px;
+      color: #000000;
+      margin-bottom: 1rem;
+      margin: 0 auto;
+    }
+  }
+}
+
+
+/*------------*/
+
+.footer__container {
+  border-radius: 20px 20px 0px 0px;
+  opacity: 0.9;
+  background: #fffbfb;
+  box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  margin-top: 0.5rem;
+
+  width: 98.79vw;
+
+  h5 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 32.76px;
+  }
+
+  h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 32.76px;
+  }
+
+  h4 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 32.76px;
+  }
+
+  figure {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem 0;
+  }
+
+  img {
+    margin-right: 0.3rem;
+  }
+}

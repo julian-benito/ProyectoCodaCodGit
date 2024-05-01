@@ -1,0 +1,197 @@
+@import url(/styles/navbar.css);
+
+/*----------------------------------------PRODUCTO-------------------------------------------------------*/
+
+.container {
+  width: 98.79vw;
+  height: auto;
+  display: flex;
+  margin-top: 8vh;
+  box-sizing: border-box;
+  gap: 5rem;
+}
+
+aside {
+  width: 12vw;
+  min-width: 120px;
+  height: auto;
+  padding: 0.5rem;
+  border-radius: 0px 20px 20px 0px;
+  position: sticky;
+  top: 10.5%;
+  background-color: #c4c9cc85;
+  position: relative;
+
+  & .filters__title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    font-family: Inter;
+    font-size: 150%;
+  }
+
+  & .filters__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 2rem;
+
+    & label {
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 18.72px;
+      letter-spacing: 0px;
+      color: #353333;
+    }
+
+    & div {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    & input {
+      margin-right: 1rem;
+    }
+  }
+}
+
+.tienda__products {
+  box-sizing: border-box;
+  width: 80vw;
+  margin: 0 auto;
+  padding: 3rem;
+  gap: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  & .products__card {
+    box-sizing: border-box;
+    padding: 0.9rem 0 0 0;
+    min-width: 160.84px;
+    min-height: 190.44px;
+    width: 20%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+
+    & img {
+      margin: 0 auto;
+      width: 85%;
+      object-fit: cover;
+      filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.411));
+    }
+
+    & h5 {
+      margin-top: 0.2rem;
+      font-family: Inter;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 23.4px;
+      margin-top: 0.3rem;
+    }
+
+    & h6 {
+      margin-top: 0.1rem;
+      font-weight: normal;
+      font-family: Inter;
+      font-size: 13px;
+      line-height: 18.72px;
+    }
+
+    & .card__texts {
+      padding: 1rem 1.5rem 0 1.5rem;
+    }
+
+    & .card__price {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+
+      & .card__price h6 {
+        font-size: 16px;
+        margin-top: 0.4rem;
+      }
+
+      & button {
+        border-radius: 12px;
+        background: #0057d9;
+        color: #ffffff;
+        padding: 0 0.6rem;
+        box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+
+        font-family: Inter;
+        font-size: 10px;
+        font-weight: 400;
+        color: #ffffff;
+      }
+    }
+  }
+
+  & .products__card:hover {
+    background-color: #f0e8e8;
+    border: 4px 4px 2px rgba(0, 0, 0, 0.25);
+    font-weight: bold;
+    box-shadow: none;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.411);
+    scale: 1.1;
+  }
+}
+
+
+/*---------------*/
+
+
+.footer__container {
+  border-radius: 20px 20px 0px 0px;
+  opacity: 0.9;
+  background: #fffbfb;
+  box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  margin-top: 0.5rem;
+
+  width: 98.79vw;
+
+  h5 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 32.76px;
+  }
+
+  h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 32.76px;
+  }
+
+  h4 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 32.76px;
+  }
+
+  figure {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem 0;
+  }
+
+  img {
+    margin-right: 0.3rem;
+  }
+}

@@ -1,0 +1,225 @@
+@import url(/styles/navbar.css);
+
+/*----------------------------------------LANDING-------------------------------------------------------*/
+
+.layout__container {
+  box-sizing: border-box;
+  width: 98.7vw;
+  height: 110vh;
+  margin-top: 3vh;
+  overflow: hidden;
+  background-image: url(/imagenes/Cafe/fondoblanco.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: hidden;
+
+  & img{
+    padding-top: 2.5rem;
+    display: flex;
+    width: auto;
+    height: 45vh;
+    object-fit: cover;
+    margin: 0 auto;
+    align-items: center;
+    opacity: 0;
+    animation: myAnim 2s ease 0s 1 normal forwards;
+
+  }
+
+  & h1 {
+    margin-top: 1rem;
+    font-family:"Inter", sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, -1.077rem + 12.308vw, 6.5rem);
+    text-align: center;
+    color: #825a2b;
+    opacity: 0;
+    text-shadow: 14px 14px 14px 22px rgba(0, 0, 0, 0.952);
+    animation: titulo 2s ease 0s 1 normal forwards;
+  }
+
+  .title__texts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -1.5rem;
+
+    & h2 {
+      font-family: "Inter", sans-serif;
+      font-size: clamp(2rem, -1.077rem + 12.308vw, 6.5rem);
+      text-shadow: 4px 4px 4px 20px rgba(255, 255, 255, 0.918);
+      font-weight: 180;
+      color: black;
+      opacity: 0;
+      text-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.952);
+      animation: titulodos 2s ease 0s 1 normal forwards;
+
+    }
+
+    & h4 {
+      font-family: "Inter", sans-serif;
+      font-size: clamp(0.3rem, -0.095rem + 2.105vw, 1.8rem);
+      font-weight: 260;
+      line-height: 1.7rem;
+      color: black;
+      opacity: 0;
+      text-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.952);
+      animation: lema 2s ease 0.6s 1 normal forwards;
+    }
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    transform: translateY(-300px);
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    filter: contrast(160%);
+    filter: contrast(100%);
+  }
+}
+
+@keyframes titulo {
+	0% {
+		transform: translateX(-300px);
+	}
+
+	100% {
+		transform: translateX(0px);
+    opacity: 1;
+    filter: contrast(200%);
+    filter: contrast(100%);
+	}
+}
+
+@keyframes titulodos {
+	0% {
+		transform: translateX(300px);
+	}
+
+	100% {
+		transform: translateX(0px);
+    opacity: 1;
+    filter: contrast(2000%);
+	}
+}
+
+@keyframes lema {
+  0% {
+    transform: translateY(100px);
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    filter: contrast(200%);
+  }
+}
+
+
+
+
+/*-----------------MOBILE------------------*/
+
+
+
+
+@media screen and (max-width : 578px) {
+  .layout__container {
+    background-image: url(/imagenes/Cafe/fondoblancomobile.jpg);
+
+    & img{
+      padding-top: 6.5rem;
+      width: auto;
+      height: 42vh; 
+    }
+
+    & h1 {
+      font-size: 3rem;
+    }
+
+    .title__texts{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: -0.5rem;
+
+      & h2 {
+        font-family: "Inter", sans-serif;
+        font-size: 3rem;
+        text-shadow: 4px 4px 4px 20px rgba(255, 255, 255, 0.918);
+        font-weight: 180;
+        color: black;
+        opacity: 0;
+        text-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.952);
+        animation: titulodos 2s ease 0s 1 normal forwards;
+
+      }
+
+      & h4 {
+        font-family: "Inter", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 0.9rem;
+        color: black;
+        opacity: 0;
+        text-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.952);
+        animation: lema 2s ease 0.6s 1 normal forwards;
+      }
+    }
+  }
+}
+
+
+/*-----------*/
+
+
+.footer__container {
+  border-radius: 20px 20px 0px 0px;
+  opacity: 0.9;
+  background: #fffbfb;
+  box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  margin-top: -0.7rem;
+
+  width: 98.79vw;
+
+  h5 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 32.76px;
+  }
+
+  h6 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 10px;
+    font-weight: normal;
+    line-height: 32.76px;
+  }
+
+  h4 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 32.76px;
+  }
+
+  figure {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.5rem 0;
+  }
+
+  img {
+    margin-right: 0.3rem;
+  }
+}

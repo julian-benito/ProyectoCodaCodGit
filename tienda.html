@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda</title>
+  <link rel="stylesheet" href="/styles/tienda.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src="/js/index.js" defer></script>
+</head>
+
+<body>
+
+
+  <header class="header">
+
+    <div class="header__container">
+
+      <nav class="nav">
+
+        <a href="/index.html"><img src="./imagenes/iconos/icono3.png" alt="" class="img__logo"></a>
+
+        <a class="abrirMenu" id="abrir"><img src="/imagenes/iconos/align-justify.png" alt="" class="abrir"></a>
+
+        <ul class="nav__links">
+          <a class="cerrarMenu" id="cerrar"><img src="/imagenes/iconos/cerrar.png" alt=""></a>
+          <li class="links__link"><a href="/products.html" class="link__enlace">Productos</a></li>
+          <li class="links__link"><a href="/tienda.html" class="link__enlace">Tienda</a></li>
+          <li class="links__link"><a href="/nosotros.html" class="link__enlace">Nosotros</a></li>
+          <li class="links__link"><a href="#contacto" class="link__enlace">Contacto</a></li>
+
+        </ul>
+
+        <ul class="nav__icons">
+          <img src="./Imagenes/iconos/shopping-cart.png" alt="" class="nav__icon">
+          <img src="./Imagenes/iconos/user.png" alt="" class="nav__icon">
+        </ul>
+
+      </nav>
+
+    </div>
+
+  </header>
+
+  <section class="tienda" id="tienda">
+    <div class="container">
+
+      <aside class="tienda__filters">
+
+        <div class="filters__title">
+          <h5>Filtros</h5>
+          <img src="/Imagenes/iconos/sliders.png" alt="">
+        </div>
+
+        <div class="filters__inputs">
+          <div class="primero">
+            <label for="checkbox">Lata<input type="checkbox" id="lata" name="checkbox"></label>
+            <label for="checkbox">Botella<input type="checkbox" id="checkbox" name="checkbox"></label>
+          </div>
+
+          <div class="segundo">
+            <label for="checkbox">Con alcohol<input type="checkbox" id="alcohol" name="checkbox"></label>
+            <label for="checkbox">Sin alcohol<input type="checkbox" id="sinalcohol" name="checkbox"></label>
+          </div>
+
+          <div class="tercero">
+          <label for="checkbox">Lager<input type="checkbox" id="lager" name="checkbox"></label>
+          <label for="checkbox">Ipa<input type="checkbox" id="ipa" name="checkbox"></label>
+          <label for="checkbox">Apa<input type="checkbox" id="apa" name="checkbox"></label>
+          <label for="checkbox">Stout<input type="checkbox" id="stout" name="checkbox"></label>
+          </div>
+
+        </div>
+
+      </aside>
+
+      <article class="tienda__products">
+
+        <div class="products__card">
+
+          <img src="/Imagenes/Cafe/afeb7193-8c0f-4d84-8770-3b0bd677d276-removebg-preview.png" alt="" class="card__img card__img1">
+
+          <div class="card__texts">
+
+            <h5>Blue Mountain</h5>
+
+            <h6>Jamaica</h6>
+
+            <div class="card__price">
+
+              <h6>$500</h6>
+              <button>Añadir</button>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="products__card">
+
+          <img src="/Imagenes/Cafe/dorado-removebg-preview.png" alt="" class="card__img">
+
+          <div class="card__texts">
+
+            <h5>Supremo</h5>
+
+            <h6>Colombia</h6>
+
+            <div class="card__price">
+
+              <h6>$500</h6>
+              <button>Añadir</button>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="products__card">
+
+          <img src="/Imagenes/Cafe/negro-removebg-preview.png" alt="" class="card__img">
+
+          <div class="card__texts">
+
+            <h5>Antigua</h5>
+
+            <h6>Guatemala</h6>
+
+            <div class="card__price">
+
+              <h6>$500</h6>
+              <button>Añadir</button>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="products__card">
+
+          <img src="/Imagenes/Cafe/rojo-removebg-preview.png" alt="" class="card__img">
+
+          <div class="card__texts">
+
+            <h5>Yirgacheffe</h5>
+
+            <h6>Etiopia</h6>
+
+            <div class="card__price">
+
+              <h6>$500</h6>
+              <button>Añadir</button>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="products__card">
+
+          <img src="/Imagenes/Cafe/verdee.png" alt="" class="card__img">
+
+          <div class="card__texts">
+
+            <h5>Santos</h5>
+
+            <h6>Brasil</h6>
+
+            <div class="card__price">
+
+              <h6>$500</h6>
+              <button>Añadir</button>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="products__card">
+
+          <img src="/Imagenes/Cafe/violeta-removebg-preview.png" alt="" class="card__img card__img--bottle">
+
+          <div class="card__texts">
+
+            <h5>Mandheling</h5>
+
+            <h6>Indonesia</h6>
+
+            <div class="card__price">
+
+              <h6>$500</h6>
+              <button>Añadir</button>
+
+            </div>
+          </div>
+
+        </div>
+
+        <div class="products__card">
+
+          <img src="/Imagenes/Cafe/verde-removebg-preview.png" alt="" class="card__img card__img--bottle">
+
+          <div class="card__texts">
+
+            <h5>Tarrazú</h5>
+
+            <h6>Costa Rica</h6>
+
+            <div class="card__price">
+
+              <h6>$500</h6>
+              <button>Añadir</button>
+
+            </div>
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="footer__container">
+      <div class="footer__left">
+        <h4>Coffee Bean</h4>
+        <figure>
+          <img src="/Imagenes/iconos/bx-phone 2.png" alt="">
+          <img src="/Imagenes/iconos/envelope-regular-24 2.png" alt="">
+          <img src="/Imagenes/iconos/bxl-instagram 2.png" alt="">
+          <img src="/Imagenes/iconos/bxl-facebook-circle 2.png" alt="">
+        </figure>
+      </div>
+
+      <div class="footer__rigth">
+        <h5>POLÍTICA DE PRIVACIDAD   |   BASES Y CONDICIONES   |   TÉRMINOS Y CONDICIONES</h5>
+        <h6>Coffee Bean®</h6>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
