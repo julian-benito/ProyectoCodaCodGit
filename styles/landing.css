@@ -5,19 +5,20 @@
 .layout__container {
   box-sizing: border-box;
   width: 98.7vw;
-  height: 110vh;
-  margin-top: 3vh;
+  height: 100vh;
   overflow: hidden;
   background-image: url(/imagenes/Cafe/fondoblanco.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
   & img{
-    padding-top: 2.5rem;
     display: flex;
-    width: auto;
-    height: 45vh;
+    width: 61%;
+    height: auto;
     object-fit: cover;
     margin: 0 auto;
     align-items: center;
@@ -58,7 +59,7 @@
 
     & h4 {
       font-family: "Inter", sans-serif;
-      font-size: clamp(0.3rem, -0.095rem + 2.105vw, 1.8rem);
+      font-size: clamp(0.5rem, -0.105rem + 2.155vw, 1.8rem);
       font-weight: 260;
       line-height: 1.7rem;
       color: black;
@@ -124,17 +125,38 @@
 
 /*-----------------MOBILE------------------*/
 
+@media (578px < width < 800px) {
+  .layout__container {
+    background-image: url(/imagenes/Cafe/fondoblancomobile.jpg);
 
+    & img{
+      width: 56%;
+    }
+    
+    & h1 {
+      font-size: clamp(3rem, -0.59rem + 9.938vw, 4.7rem);
+    }
 
+    .title__texts{
+      margin-top: -1rem;
+      & h2 {
+        font-size: clamp(3rem, -0.59rem + 9.938vw, 5.3rem);
+      }
+
+      & h4 {
+        font-size: 0.9rem;
+        line-height: 1rem;
+      }
+    }
+  }
+}
 
 @media screen and (max-width : 578px) {
   .layout__container {
     background-image: url(/imagenes/Cafe/fondoblancomobile.jpg);
 
     & img{
-      padding-top: 6.5rem;
-      width: auto;
-      height: 42vh; 
+      width: 50%; 
     }
 
     & h1 {
@@ -142,32 +164,17 @@
     }
 
     .title__texts{
-      display: flex;
-      align-items: center;
-      justify-content: center;
       margin-top: -0.5rem;
 
       & h2 {
-        font-family: "Inter", sans-serif;
         font-size: 3rem;
-        text-shadow: 4px 4px 4px 20px rgba(255, 255, 255, 0.918);
         font-weight: 180;
-        color: black;
-        opacity: 0;
-        text-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.952);
-        animation: titulodos 2s ease 0s 1 normal forwards;
-
       }
 
       & h4 {
-        font-family: "Inter", sans-serif;
         font-size: 0.9rem;
         font-weight: 400;
         line-height: 0.9rem;
-        color: black;
-        opacity: 0;
-        text-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.952);
-        animation: lema 2s ease 0.6s 1 normal forwards;
       }
     }
   }
