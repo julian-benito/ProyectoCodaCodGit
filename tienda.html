@@ -38,10 +38,10 @@
 
         </ul>
 
-        <div class="nav__icons">
-          <img src="./Imagenes/iconos/shopping-cart.png" alt="" class="nav__icon">
-          <img src="./Imagenes/iconos/user.png" alt="" class="nav__icon">
-        </div>
+        <ul class="nav__icons">
+          <li><img src="./Imagenes/iconos/shopping-cart.png" alt="" class="nav__icon"></li>
+          <li><img src="./Imagenes/iconos/user.png" alt="" class="nav__icon"></li>
+        </ul>
 
       </nav>
 
@@ -60,21 +60,24 @@
         </div>
 
         <div class="filters__inputs">
-          <div class="primero">
-            <label for="lata">Lata<input type="checkbox" id="lata" name="checkbox"></label>
-            <label for="checkbox">Botella<input type="checkbox" id="checkbox" name="checkbox"></label>
+          <div class="input__containers">
+            <h6>Sabores</h6>
+            <label for="checkbox">Frutales y citricos<input type="checkbox" id="lata" name="checkbox"></label>
+            <label for="checkbox">Dulces y suaves<input type="checkbox" id="checkbox" name="checkbox"></label>
+            <label for="checkbox">Terrosos y especiados<input type="checkbox" id="checkbox" name="checkbox"></label>
           </div>
 
-          <div class="segundo">
-            <label for="alcohol">Con alcohol<input type="checkbox" id="alcohol" name="checkbox"></label>
-            <label for="sinalcohol">Sin alcohol<input type="checkbox" id="sinalcohol" name="checkbox"></label>
+          <div class="input__containers">
+            <h6>Cuerpo</h6>
+            <label for="checkbox">Ligero<input type="checkbox" id="alcohol" name="checkbox"></label>
+            <label for="checkbox">Equilibrado<input type="checkbox" id="sinalcohol" name="checkbox"></label>
+            <label for="checkbox">Robusto<input type="checkbox" id="sinalcohol" name="checkbox"></label>
           </div>
 
-          <div class="tercero">
-          <label for="lager">Lager<input type="checkbox" id="lager" name="checkbox"></label>
-          <label for="ipa">Ipa<input type="checkbox" id="ipa" name="checkbox"></label>
-          <label for="apa">Apa<input type="checkbox" id="apa" name="checkbox"></label>
-          <label for="stout">Stout<input type="checkbox" id="stout" name="checkbox"></label>
+          <div class="input__containers">
+            <h6>Variedad</h6>
+            <label for="checkbox">Arabica<input type="checkbox" id="lager" name="checkbox"></label>
+            <label for="checkbox">Robusta<input type="checkbox" id="ipa" name="checkbox"></label>
           </div>
 
         </div>

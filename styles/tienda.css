@@ -6,7 +6,7 @@
   width: 98.79vw;
   height: auto;
   display: flex;
-  margin-top: 8vh;
+  margin-top: 6vh;
   box-sizing: border-box;
   gap: 5rem;
 }
@@ -16,10 +16,9 @@ aside {
   min-width: 120px;
   height: auto;
   padding: 0.5rem;
-  border-radius: 0px 20px 20px 0px;
   position: sticky;
   top: 10.5%;
-  background-color: #c4c9cc85;
+  background-color: #f3f0f0de;
   position: relative;
 
   & .filters__title {
@@ -38,11 +37,16 @@ aside {
 
     & label {
       font-family: Inter;
-      font-size: 16px;
+      font-size: 14px;
       font-weight: normal;
       line-height: 18.72px;
       letter-spacing: 0px;
       color: #353333;
+    }
+
+    h6{
+      font-family: Inter;
+      font-size: 80%;
     }
 
     & div {
@@ -51,15 +55,12 @@ aside {
       gap: 1rem;
     }
 
-    & input {
-      margin-right: 1rem;
-    }
   }
 }
 
 .tienda__products {
   box-sizing: border-box;
-  width: 80vw;
+  width: 85vw;
   margin: 0 auto;
   padding: 3rem;
   gap: 2rem;
