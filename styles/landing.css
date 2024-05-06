@@ -21,6 +21,7 @@
     height: auto;
     object-fit: cover;
     margin: 0 auto;
+    margin-top: 4rem;
     align-items: center;
     opacity: 0;
     animation: myAnim 2s ease 0s 1 normal forwards;
@@ -120,10 +121,254 @@
   }
 }
 
+/*--------------------description--------------------------------------*/
+
+.main__container {
+  box-sizing: border-box;
+  height: auto;
+  width: 98.7vw;
+  padding: 0 8rem;
+  overflow: hidden;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #f8f8f8 100%);
+  background-blend-mode: screen;
+}
+
+.description{
+  box-sizing: border-box;
+  margin: 7rem 0 0 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+
+  & div{
+    box-sizing: border-box;
+    width: 17%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    margin: 0 1rem;
+
+    & img {
+      width: 25%;
+      object-fit: cover;
+    }
+
+    & h5 {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1rem;
+    }
+
+    & p {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 0.9rem;
+      font-weight: 400;
+      line-height: 1.3rem;
+    }
+  }
+}
+
+/*---------------------CAFES-------------------------------------------*/
+
+.productos {
+  border-radius: 18px;
+  box-sizing: border-box;
+  width: 83.7vw;
+  height: 89vh;
+  margin: 7rem 0 3rem 0;
+
+  & h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    color: black;
+    padding-top: 2rem;
+    margin-left: 31rem;
+  }
+
+  & .cafes {
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+
+    & article {
+      width: 18%;
+      box-sizing: border-box;
+      overflow: hidden;
+      height: 320px;
+      object-fit: cover;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: space-between;
+      position: relative;
+      border-radius: 18px;
+      background-color: #d2d8d2ee;
+      margin: 1rem 0 2rem 0;
+
+      & h3 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1,4rem;
+        position: absolute;
+        left: 15%;
+        color: rgb(27, 27, 27);
+      }
+
+      & img {
+        height: 80%;
+        width: 100%;
+        position: absolute;
+        top: 12%;
+        left: -4%;
+        object-fit: cover;
+      }
+    }
+
+    & article:hover{
+      background-color: #997126ee;
+
+      & h3 {
+        font-size: 1.6rem;
+        color: white;
+      }
+      
+    }
+  }
+
+  & a {
+    padding: 1.5rem 3.8rem;
+    font-family: "Josefin Sans", sans-serif;
+    color: white;
+    background-color: #997126ee;
+    border-radius: 18px;
+    margin-left: 32rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+  }
+}
+
+/*-----------------------NOSOTROS----------------------------------*/
+
+.about{
+  box-sizing: border-box;
+  margin: 12rem 0 3rem 0;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+
+  & figure{
+    width: 50%;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+  }
+
+  & div {
+    width: 50%;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+
+    & p {
+      width: 100%;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 350;
+    }
+
+    & a {
+      width: 16%;
+      margin-top: 3rem;
+      padding: 1.4rem 2.8rem;
+      font-family: "Josefin Sans", sans-serif;
+      color: white;
+      background-color: #997126ee;
+      border-radius: 18px;
+      margin-left: 32rem;
+      font-size: 1.3rem;
+      text-decoration: none;
+      margin-left: -0.1rem;
+    }
+  }
+}
+
+/*------------------------SUSCRIBE---------------------------------*/
+
+.suscribe__container{
+  width: 100%;
+  height: 50vh;
+  display: flex;
+  margin: 10rem 0 7rem 0;
+
+  & figure {
+    width: 40%;
+    height: 110%;
+    order: 2;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 18px;
+    }
+  }
+
+  & div {
+    width: 60%;
+    height: 100%;
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem;
+
+    & h4 {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.8rem;
+      font-weight: 500;
+    }
+
+    & p {
+      margin-top: -2rem;
+      width: 80%;
+      height: auto;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1.5rem;
+      font-weight: 350;
+      line-height: 1.8rem;
+    }
+
+    & input {
+      background-color: #997126ee;
+      padding: 1rem 2rem;
+      border-radius: 18px;
+      margin-top: -7rem;
+    }
+
+    & input::placeholder{
+      color: white;
+    }
+  }
+}
 
 
 
-/*-----------------MOBILE------------------*/
+/*--------------------------MOBILE---------------------------------*/
 
 @media (578px < width < 800px) {
   .layout__container {
