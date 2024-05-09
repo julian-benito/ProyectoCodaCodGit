@@ -5,7 +5,7 @@
 .nosotros__container {
   position: relative;
   box-sizing: border-box;
-  width: 98.7vw;
+  width: 100vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -71,8 +71,8 @@
   content: url(/imagenes/Cafe/granoscafe.png);
   object-fit: contain;
   position: absolute;
-  top: 21%;
-  left: -10%;
+  top: 70vw;
+  left: -15vw;
   height: 110%;
   overflow: hidden;
 }

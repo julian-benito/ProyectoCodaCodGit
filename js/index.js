@@ -1,20 +1,37 @@
-/* NAVBAR RESPONSIVE*/ 
-const navLinks = document.querySelector('.nav__links');
-const navIcons = document.querySelector('.nav__icons');
+/*NAVBAR RESPONSIVE*/ 
+
+const navMenu = document.querySelector('.nav__menu');
 const abrir = document.querySelector('#abrir');
 const cerrar = document.querySelector('#cerrar');
 
 abrir.addEventListener('click', () => {
-  navLinks.classList.add('nav__visible');
-  navIcons.classList.add('nav__visible');
+  navMenu.classList.remove('nav__oculto');
+  navMenu.classList.add('nav__visible');
+  cerrar.style.display = 'block';
   abrir.style.display = 'none';
 });
 
 cerrar.addEventListener('click', () => {
-  navLinks.classList.remove('nav__visible');
-  navIcons.classList.remove('nav__visible');
+  navMenu.classList.remove('nav__visible');
+  navMenu.classList.add('nav__oculto');
   abrir.style.display = 'block';
+  cerrar.style.display = 'none';
 });
+
+function navResponsive() {
+  const ventanaAncho = window.innerWidth;
+  if (ventanaAncho <= 578) {
+    abrir.style.display = 'block';
+    cerrar.style.display = 'none';
+  } else {
+    abrir.style.display = 'none';
+    cerrar.style.display = 'none';
+  }
+  window.addEventListener('resize', navResponsive);
+}
+
+navResponsive();
+
 
 /*ANIMACION TEXTOS NOSOTROS*/
 
