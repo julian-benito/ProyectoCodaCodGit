@@ -283,7 +283,7 @@
     font-family: "Josefin Sans", sans-serif;
     color: white;
     background-color: #997126ee;
-    box-shadow: rgba(161, 100, 43, 0.925) 0px 5px 15px;
+    box-shadow: rgba(124, 100, 23, 0.1) 0px 4px 12px;
     border-radius: 18px;
     margin-left: 32rem;
     font-size: 1.3rem;
@@ -302,7 +302,6 @@
   overflow: hidden;
   display: flex;
   justify-content: space-between;
-  
   border-radius: 18px;
   
 
@@ -338,7 +337,7 @@
       font-family: "Josefin Sans", sans-serif;
       color: white;
       background-color: #997126ee;
-      box-shadow: rgba(161, 100, 43, 0.925) 0px 5px 15px;
+      box-shadow: rgba(124, 100, 23, 0.1) 0px 4px 12px;
       border-radius: 18px;
       margin-left: 32rem;
       font-size: 1.3rem;
@@ -355,7 +354,6 @@
   height: 50vh;
   display: flex;
   margin: 10rem 0 7rem 0;
-  background-color: #f1f5f1cc;
   border-radius: 18px;
   
 
@@ -508,6 +506,7 @@
         line-height: 1.3rem;
         padding: 1rem 3rem;
         margin-left: 2rem;
+        margin-bottom: 2rem;
       }
     }
 
@@ -559,8 +558,9 @@
           height: 320px;
           padding: 2rem;
           align-items: center;
-          background-color: #d6d3d3;
+          background-color: #d4d1cdc7;
           margin: 1rem 0 0rem 0;
+          cursor: pointer;
 
           & img {
             height: 80%;
@@ -584,8 +584,10 @@
       font-family: "Josefin Sans", sans-serif;
       color: white;
       border-radius: 18px;
-      margin-left: 6rem;
       font-size: 1.3rem;
+      position: absolute;
+      width: 20%;
+      margin: 0 5.5rem;
     }
   }
 
@@ -598,6 +600,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-top: 15rem;
     
     border-radius: 18px;
     
@@ -633,7 +636,7 @@
         padding: 1.4rem 2.5rem;
         font-size: 1.2rem;
         margin: 0 auto;
-        margin-top: 3rem;
+        margin-top: 2rem;
       }
     }
   }
@@ -641,11 +644,10 @@
   .suscribe__container {
     box-sizing: border-box;
     width: 100%;
-    height: 80vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     margin: 6rem 0 7rem 0;
-    background-color: #f1f5f1cc;
     border-radius: 18px;
     overflow-x: hidden;
   
@@ -672,7 +674,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-around;
       padding: 0;
   
       & h4 {
@@ -681,7 +683,7 @@
       }
   
       & p {
-        margin-top: -4rem;
+        margin-top: -1rem;
         width: 80%;
         height: auto;
         font-size: 1rem;
@@ -689,9 +691,8 @@
       }
   
       & input {
-        border: 1px solid blue;
         background-color: #825a2b;
-        box-shadow: rgba(161, 100, 43, 0.925) 0px 5px 15px;
+        box-shadow: rgba(124, 100, 23, 0.1) 0px 4px 12px;
         padding: 1rem 2rem;
         border-radius: 18px;
         margin-top: -3rem;
