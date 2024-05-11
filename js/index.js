@@ -52,3 +52,22 @@ function checkTexts(){
     }
   })
 }
+
+/*-------carousel index productos-----------*/
+const carousel = document.querySelector('.carousel');
+const prevButton = document.querySelector('.left');
+const nextButton = document.querySelector('.rigth');
+
+prevButton.addEventListener('click', function () {
+  carousel.scrollBy({
+    left: -300, 
+    behavior: 'smooth'
+  });
+});
+
+nextButton.addEventListener('click', function () {
+  carousel.scrollBy({
+    left: 300,
+    behavior: 'smooth'
+  });
+});
