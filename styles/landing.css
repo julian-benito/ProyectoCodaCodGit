@@ -15,7 +15,7 @@
   align-items: center;
   justify-content: center;
 
-  & img{
+  & img {
     display: flex;
     width: 61%;
     height: auto;
@@ -25,12 +25,11 @@
     align-items: center;
     opacity: 0;
     animation: myAnim 2s ease 0s 1 normal forwards;
-
   }
 
   & h1 {
     margin-top: 1rem;
-    font-family:"Inter", sans-serif;
+    font-family: "Inter", sans-serif;
     font-weight: 700;
     font-size: clamp(2rem, -1.077rem + 12.308vw, 6.5rem);
     text-align: center;
@@ -40,7 +39,7 @@
     animation: titulo 2s ease 0s 1 normal forwards;
   }
 
-  .title__texts{
+  .title__texts {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -55,7 +54,6 @@
       opacity: 0;
       text-shadow: 2px 2px 4px 5px rgba(0, 0, 0, 0.952);
       animation: titulodos 2s ease 0s 1 normal forwards;
-
     }
 
     & h4 {
@@ -85,28 +83,28 @@
 }
 
 @keyframes titulo {
-	0% {
-		transform: translateX(-300px);
-	}
+  0% {
+    transform: translateX(-300px);
+  }
 
-	100% {
-		transform: translateX(0px);
+  100% {
+    transform: translateX(0px);
     opacity: 1;
     filter: contrast(200%);
     filter: contrast(100%);
-	}
+  }
 }
 
 @keyframes titulodos {
-	0% {
-		transform: translateX(300px);
-	}
+  0% {
+    transform: translateX(300px);
+  }
 
-	100% {
-		transform: translateX(0px);
+  100% {
+    transform: translateX(0px);
     opacity: 1;
     filter: contrast(2000%);
-	}
+  }
 }
 
 @keyframes lema {
@@ -129,20 +127,20 @@
   width: 98.7vw;
   padding: 0 8rem;
   overflow: hidden;
-  background-image: linear-gradient(120deg, #fdfbfb 0%, #f8f8f8 100%);
+  background-image: linear-gradient(-225deg, #E3FDF5 0%, #fff6e6ee 100%);
   background-blend-mode: screen;
 }
 
-.description{
+.description {
   box-sizing: border-box;
   margin: 7rem 0 0 0;
   width: 100%;
   height: auto;
-  overflow: hidden;
   display: flex;
   justify-content: space-between;
+  
 
-  & div{
+  & div {
     box-sizing: border-box;
     width: 17%;
     height: 100%;
@@ -183,10 +181,16 @@
 
   & h2 {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 2rem;
-    color: black;
-    padding-top: 2rem;
-    margin-left: 31rem;
+    font-size: 1.8rem;
+    font-weight: 400;
+    color: #F4F3EE;
+    background-color: #38302E;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding-top: 1.3rem;
+    padding-bottom: 1rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 18px;
   }
 
   & .cafes {
@@ -195,51 +199,87 @@
     height: auto;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-top: 3rem;
     margin-bottom: 4rem;
+    overflow: hidden;
+    position: relative;
 
-    & article {
-      width: 18%;
-      box-sizing: border-box;
-      overflow: hidden;
-      height: 320px;
-      object-fit: cover;
-      padding: 2rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-content: space-between;
-      position: relative;
-      border-radius: 18px;
-      background-color: #d2d8d2ee;
-      margin: 1rem 0 2rem 0;
+    & figure {
+      width: 4%;
+      height: 6rem;
 
-      & h3 {
-        font-family: "Josefin Sans", sans-serif;
-        font-size: 1,4rem;
-        position: absolute;
-        left: 15%;
-        color: rgb(27, 27, 27);
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
       }
 
       & img {
-        height: 80%;
-        width: 100%;
-        position: absolute;
-        top: 12%;
-        left: -4%;
-        object-fit: cover;
+        width: 110%;
+        height: 110%;
+        object-fit: contain;
       }
     }
 
-    & article:hover{
-      background-color: #997126ee;
+    & .carousel {
+      width: 100%;
+      height: auto;
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: calc(100% / 4);
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 1rem;
+      border-radius: 8px;
+      scroll-behavior: smooth;
+      scrollbar-width: none;
 
-      & h3 {
-        font-size: 1.6rem;
-        color: white;
+      & article {
+        width: 75%;
+        box-sizing: border-box;
+        overflow: hidden;
+        height: 320px;
+        object-fit: cover;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+        position: relative;
+        border-radius: 18px;
+        background-color: #ffffff;
+        margin: 1rem 0 2rem 0;
+
+        & h3 {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 1, 4rem;
+          position: absolute;
+          top: 15%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: rgb(27, 27, 27);
+        }
+
+        & img {
+          height: 80%;
+          width: 100%;
+          position: absolute;
+          top: 54%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          object-fit: cover;
+        }
       }
-      
+
+      & article:hover {
+        background-color: #d4d1cdc7;
+        scale: 1.1;
+
+        & h3 {
+          font-size: 1.3rem;
+        }
+      }
     }
   }
 
@@ -248,6 +288,7 @@
     font-family: "Josefin Sans", sans-serif;
     color: white;
     background-color: #997126ee;
+    box-shadow: rgba(161, 100, 43, 0.925) 0px 5px 15px;
     border-radius: 18px;
     margin-left: 32rem;
     font-size: 1.3rem;
@@ -255,9 +296,10 @@
   }
 }
 
+
 /*-----------------------NOSOTROS----------------------------------*/
 
-.about{
+.about {
   box-sizing: border-box;
   margin: 12rem 0 3rem 0;
   width: 100%;
@@ -265,9 +307,13 @@
   overflow: hidden;
   display: flex;
   justify-content: space-between;
+  
+  border-radius: 18px;
+  
 
-  & figure{
+  & figure {
     width: 50%;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
 
     & img {
       width: 100%;
@@ -297,6 +343,7 @@
       font-family: "Josefin Sans", sans-serif;
       color: white;
       background-color: #997126ee;
+      box-shadow: rgba(161, 100, 43, 0.925) 0px 5px 15px;
       border-radius: 18px;
       margin-left: 32rem;
       font-size: 1.3rem;
@@ -308,16 +355,20 @@
 
 /*------------------------SUSCRIBE---------------------------------*/
 
-.suscribe__container{
+.suscribe__container {
   width: 100%;
   height: 50vh;
   display: flex;
   margin: 10rem 0 7rem 0;
+  background-color: #f1f5f1cc;
+  border-radius: 18px;
+  
 
   & figure {
     width: 40%;
     height: 110%;
     order: 2;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     & img {
       width: 100%;
@@ -354,35 +405,34 @@
     }
 
     & input {
-      background-color: #997126ee;
+      background-color: #825a2b;
+      box-shadow: rgba(161, 100, 43, 0.925) 0px 5px 15px;
       padding: 1rem 2rem;
       border-radius: 18px;
       margin-top: -7rem;
     }
 
-    & input::placeholder{
+    & input::placeholder {
       color: white;
     }
   }
 }
 
-
-
-/*--------------------------MOBILE---------------------------------*/
+/*-----------------Responsive------------------*/
 
 @media (578px < width < 800px) {
   .layout__container {
     background-image: url(/imagenes/Cafe/fondoblancomobile.jpg);
 
-    & img{
+    & img {
       width: 56%;
     }
-    
+
     & h1 {
       font-size: clamp(3rem, -0.59rem + 9.938vw, 4.7rem);
     }
 
-    .title__texts{
+    .title__texts {
       margin-top: -1rem;
       & h2 {
         font-size: clamp(3rem, -0.59rem + 9.938vw, 5.3rem);
@@ -396,19 +446,19 @@
   }
 }
 
-@media screen and (max-width : 578px) {
+@media screen and (max-width: 578px) {
   .layout__container {
     background-image: url(/imagenes/Cafe/fondoblancomobile.jpg);
 
-    & img{
-      width: 50%; 
+    & img {
+      width: 50%;
     }
 
     & h1 {
       font-size: 3rem;
     }
 
-    .title__texts{
+    .title__texts {
       margin-top: -0.5rem;
 
       & h2 {
@@ -423,11 +473,225 @@
       }
     }
   }
+
+  .main__container{
+    padding: 0 1rem;
+    width: 100vw;
+    overflow-x: hidden;
+
+  }
+
+  .description {
+    
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    align-items: start;
+  
+    & div {
+      left: 0;
+      box-sizing: border-box;
+      width: 80%;
+      height: 100%;
+      flex: 0 0 100%;
+      scroll-snap-align: start;
+  
+      & img {
+        width: 20%;
+        object-fit: cover;
+      }
+  
+      & h5 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1rem 0;
+      }
+  
+      & p {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 0.9rem;
+        font-weight: 400;
+        line-height: 1.3rem;
+        padding: 1rem 3rem;
+        margin-left: 2rem;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      width: 5px;
+      background: rgb(201, 199, 199);
+      border-radius: 0 0 15px 15px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #868585;
+      border-radius: 15px;
+    }
+  }
+
+  .productos {
+    border-radius: 18px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 7rem 1rem 3rem 0.2rem;
+  
+    & .cafes {
+      & .carousel {
+        width: 70%;
+        grid-auto-columns: calc(100% / 1);
+        gap: 1.4rem;
+  
+        & article {
+          width: 100%;
+          height: 320px;
+          padding: 2rem;
+          align-items: center;
+          background-color: #d6d3d3;
+          margin: 1rem 0 0rem 0;
+
+          & img {
+            height: 80%;
+            width: 100%;
+          }
+        }
+  
+        & article:hover {
+          background-color: #d4d1cdc7;
+          scale: 1;
+  
+          & h3 {
+            font-size: 1.3rem;
+          }
+        }
+      }
+    }
+  
+    & a {
+      padding: 1.2rem 3.5rem;
+      font-family: "Josefin Sans", sans-serif;
+      color: white;
+      border-radius: 18px;
+      margin-left: 6rem;
+      font-size: 1.3rem;
+    }
+  }
+
+  .about {
+    box-sizing: border-box;
+    margin: 10rem 0 3rem 0;
+    width: 100%;
+    height: 68vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    border-radius: 18px;
+    
+  
+    & figure {
+      width: 99.8%;
+      border-radius: 18px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  
+      & img {
+        width: 100%;
+      }
+    }
+  
+    & div {
+      width: 100%;
+      height: auto;
+      padding: 3rem 0;
+      display: flex;
+      flex-direction: column;
+  
+      & p {
+        width: 80%;
+        height: auto;
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1rem;
+        font-weight: 350;
+        margin: 0 auto;
+      }
+  
+      & a {
+        width: 16%;
+        padding: 1.4rem 2.5rem;
+        font-size: 1.2rem;
+        margin: 0 auto;
+        margin-top: 3rem;
+      }
+    }
+  }
+  
+  .suscribe__container {
+    box-sizing: border-box;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    margin: 6rem 0 7rem 0;
+    background-color: #f1f5f1cc;
+    border-radius: 18px;
+    overflow-x: hidden;
+  
+    & figure {
+      margin-left: -0.1rem;
+      width: 100%;
+      height: 40%;
+      order: 1;
+      border-radius: 18px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 18px;
+      }
+    }
+  
+    & div {
+      width: 100%;
+      height: 60%;
+      order: 2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+  
+      & h4 {
+        font-size: 1.3rem;
+        margin-top: 2rem;
+      }
+  
+      & p {
+        margin-top: -4rem;
+        width: 80%;
+        height: auto;
+        font-size: 1rem;
+        line-height: 1.4rem;
+      }
+  
+      & input {
+        border: 1px solid blue;
+        background-color: #825a2b;
+        box-shadow: rgba(161, 100, 43, 0.925) 0px 5px 15px;
+        padding: 1rem 2rem;
+        border-radius: 18px;
+        margin-top: 0;
+      }
+  
+      & input::placeholder {
+        color: white;
+      }
+    }
+  }
 }
 
-
 /*-----------*/
-
 
 .footer__container {
   border-radius: 20px 20px 0px 0px;
