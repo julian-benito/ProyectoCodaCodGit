@@ -170,7 +170,12 @@
   
     & figure {
       width: 100%;
-      height: 85vh;
+      height: 80vh;
+    }
+
+    & .nosotros__text {
+      width: 90%;
+      padding: 3rem 2rem;
     }
   }  
 }
