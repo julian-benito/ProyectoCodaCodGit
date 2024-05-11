@@ -5,7 +5,7 @@
 .nosotros__container {
   position: relative;
   box-sizing: border-box;
-  width: 100vw;
+  width: 98.7vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -23,10 +23,10 @@
   }
 
   & figure {
-    overflow: hidden;
+    box-sizing: border-box;
     width: 100%;
     height: 75vh;
-    margin: 1rem 0;
+    overflow: hidden;
     z-index: 2;
 
     & img {
@@ -39,7 +39,7 @@
   & .nosotros__text {
     width: 50%;
     font-family: Inter;
-    font-size: clamp(0.8rem, -0.25rem + 3.333vw, 1.55rem);
+    font-size: clamp(1.1rem, -0.25rem + 3.333vw, 1.55rem);
     font-weight: 350;
     line-height: 32px;
     letter-spacing: 0px;
@@ -67,13 +67,14 @@
   }
 }
 
-.nosotros__text::before{
+.nosotros__container::before{
   content: url(/imagenes/Cafe/granoscafe.png);
   object-fit: contain;
   position: absolute;
-  top: 70vw;
+  top: 40%;
   left: -15vw;
   height: 110%;
+  
   overflow: hidden;
 }
 
@@ -138,4 +139,96 @@
   img {
     margin-right: 0.3rem;
   }
+}
+
+/*----------------------RESPONSIVE-------------------*/
+
+@media (578px < width < 1000px) {
+  .nosotros__container::before{
+    content: url(/imagenes/Cafe/granoscafe.png);
+    object-fit: contain;
+    position: absolute;
+    top: 42%;
+    left: -30vw;
+    height: 110%;
+  }
+}
+
+@media (1px < width < 578px) {
+  .nosotros__container::before{
+    content: '';
+    object-fit: contain;
+    position: absolute;
+    top: 12%;
+    left: -30vh;
+    height: 110%;
+  }
+
+  .nosotros__container {
+    position: relative;
+    box-sizing: border-box;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vh;
+    overflow: hidden;
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #f5f7f8 100%);
+  
+    & h3 {
+      font-family: Inter;
+      font-size: clamp(1.4rem, 0.436rem + 2.571vw, 2.75rem);
+      font-weight: bold;
+      line-height: 42.12px;
+      padding: 2rem;
+      margin: 0 auto;
+      margin-top: -1rem;
+    }
+  
+    & figure {
+      box-sizing: border-box;
+      width: 100%;
+      height: 75vh;
+      overflow: hidden;
+      margin-top: 6vh;
+  
+      & img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  
+    & .nosotros__text {
+      width: 90%;
+      font-family: Inter;
+      font-size: clamp(1.1rem, -0.25rem + 3.333vw, 1.55rem);
+      font-weight: 350;
+      line-height: 32px;
+      letter-spacing: 0px;
+      color: #000000;
+      padding: 3rem 2rem;
+  
+      overflow: hidden;
+      margin: 0 auto;
+  
+      & p > span {
+        display: block;
+        margin-bottom: 1.3rem;
+      }
+  
+      & .salud {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 37.44px;
+        letter-spacing: 0px;
+        color: #000000;
+        margin-bottom: 0;
+        margin-top: -4rem;
+        margin: 0 auto;
+      }
+    }
+  }
+  
 }
