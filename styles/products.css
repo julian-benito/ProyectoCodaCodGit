@@ -99,6 +99,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+      margin-left: -1.3rem;
 
       & div {
         cursor: pointer;
@@ -106,7 +107,7 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-        align-content: space-between;
+        align-items:center;
         width: auto;
 
         .taza__img {
@@ -145,7 +146,7 @@
 
   & p {
     font-family: "Josefin Sans", sans-serif;
-    font-size: clamp(0.7rem, 0.277rem + 1.692vw, 1.8rem);
+    font-size: clamp(1rem, 0.277rem + 1.692vw, 1.8rem);
     padding: 0 2rem 0 4rem;
     line-height: 43.4px;
   }
@@ -537,8 +538,8 @@
 
     & .product__carrousel {
       width: 70%;
-      height: 60vh;
-      top: 20%;
+      height: 50vh;
+      top: 25%;
       position: relative;
 
       & img {
@@ -546,8 +547,9 @@
       }
 
       & a {
-        margin-bottom: 3rem;
+        margin-bottom: 4rem;
         padding: 1rem 2rem;
+        margin-top: -9%;
       }
     }
   }
@@ -563,13 +565,14 @@
 
       & .contenedor__tazas {
         width: 100%;
-        overflow: hidden;
         display: flex;
         flex-direction: row;
         justify-content: start;
+        gap: 2rem;
+        margin-left: -1.3rem;
 
         & div {
-          min-width: 130px;
+          min-width: 150px;
           width: auto;
         }
 
@@ -585,7 +588,85 @@
     }
   }
 
+  .footer {
+    padding: 6rem 0 14rem 2rem;
+    & .footer__cards {
+      position: relative;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      scroll-snap-type: x mandatory;
+      gap: 2rem;
   
+      & article {
+        opacity: 1;
+        left: 0;
+        width: 100%;
+        flex: 0 0 100%;
+        scroll-snap-align: start;
+        padding: 0 2rem;
+  
+        & h3 {
+          font-family: "Josefin Sans", sans-serif;
+          font-size: 1.5rem;
+          color: #0f661b;
+          margin-top: 2rem;
+          
+        }
+  
+        & img {
+          height: 65%;
+          width: 100%;
+          position: absolute;
+          top: 20%;
+          left: 0%;
+          object-fit: cover;
+        }
+  
+        & button {
+          display: block;
+          width: 6rem;
+          background-color: #0f661b;
+          border-radius: 18px;
+          position: absolute;
+          left: 50%;
+          top: 85%;
+          transform: translate(-50%, -50%);
+        }
+  
+        & button:hover {
+          scale: 1;
+        }
+      }
+  
+      & article:hover {
+        width: inherit;
+        opacity: 1;
+        filter: contrast(110%);
+      }
+  
+      & article:hover img {
+        height: 65%;
+        width: 100%;
+        top: 20%;
+      }
+  
+      & article:hover button {
+        display: inherit;
+      }
+    }
+
+    ::-webkit-scrollbar {
+      height: 5px;
+      width: 100%;
+      background: rgb(201, 199, 199);
+      border-radius: 0 0 15px 15px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #868585;
+      border-radius: 15px;
+    }
+  }
 }
 
 /*------------*/
