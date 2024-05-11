@@ -127,8 +127,7 @@
   width: 98.7vw;
   padding: 0 8rem;
   overflow: hidden;
-  background-image: linear-gradient(-225deg, #E3FDF5 0%, #fff6e6ee 100%);
-  background-blend-mode: screen;
+  background-image: linear-gradient(-225deg, #fdf3e3 0%, #FFE6FA 100%);
 }
 
 .description {
@@ -181,11 +180,9 @@
 
   & h2 {
     font-family: "Josefin Sans", sans-serif;
-    font-size: 1.8rem;
-    font-weight: 400;
-    color: #F4F3EE;
-    background-color: #38302E;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #202020;
     padding-top: 1.3rem;
     padding-bottom: 1rem;
     width: 100%;
@@ -248,7 +245,6 @@
         align-content: space-between;
         position: relative;
         border-radius: 18px;
-        background-color: #ffffff;
         margin: 1rem 0 2rem 0;
 
         & h3 {
@@ -681,7 +677,7 @@
         box-shadow: rgba(161, 100, 43, 0.925) 0px 5px 15px;
         padding: 1rem 2rem;
         border-radius: 18px;
-        margin-top: 0;
+        margin-top: -6rem;
       }
   
       & input::placeholder {
