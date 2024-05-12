@@ -22,14 +22,14 @@
   background-image: url(/imagenes/Cafe/fondoproductos2.jpg);
   background-size: contain;
   background-repeat: repeat;
-  box-shadow: 1px 1px 2px 2px rgba(133, 130, 130, 0.25);
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 
   & .product__carrousel {
     box-sizing: border-box;
     width: 80%;
     height: 75vh;
     border-radius: 30px;
-    box-shadow: 1px 1px 2px 2px rgba(133, 130, 130, 0.25);
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     background: white;
     position: sticky;
     top: 17%;
