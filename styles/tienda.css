@@ -141,7 +141,6 @@ aside {
     border: 4px 4px 2px rgba(0, 0, 0, 0.25);
     font-weight: bold;
     box-shadow: none;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.411);
     scale: 1.1;
   }
 }
@@ -194,5 +193,67 @@ aside {
 
   img {
     margin-right: 0.3rem;
+  }
+}
+
+/*----------------------RESPONSIVE------------------------*/
+
+@media (1px < width < 578px) {
+  
+  .container {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin-top: 6vh;
+  }
+  
+  aside {
+    box-sizing: border-box;
+    width: 100%;
+    height: 4rem;
+    padding: 2rem 1rem;
+    margin-top: -1rem;
+    position: relative;
+  
+    & .filters__title {
+      margin-top: 0;
+      font-family: Inter;
+      font-size: 140%;
+    }
+  
+    & .filters__inputs {
+      display: none;
+      flex-direction: column;
+      gap: 3rem;
+      margin-top: 2rem;
+    }
+  }
+  
+  .tienda__products {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 0 2rem;
+    gap: 3rem;
+    margin-top: -3rem;
+  
+    & .products__card {
+      box-sizing: border-box;
+      padding: 0.9rem 0 0 0;
+      min-width: 150.84px;
+      min-height: 170.44px;
+      justify-content: space-between;
+  
+      margin-bottom: 1rem;
+      margin-right: 0.5rem;
+    }
+  
+    & .products__card:hover {
+      background-color: #f0e8e8;
+      border: 4px 4px 2px rgba(0, 0, 0, 0.25);
+      font-weight: bold;
+      box-shadow: none;
+      scale: 1.1;
+    }
   }
 }
