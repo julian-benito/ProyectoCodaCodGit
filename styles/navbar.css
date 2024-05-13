@@ -100,6 +100,7 @@ body {
   .nav__container{
     flex-direction: column;
     overflow-x: visible;
+    height: auto;
   }
 
   .nav__mobile{

@@ -79,7 +79,6 @@ aside {
     display: flex;
     flex-direction: column;
     border-radius: 10px;
-
     margin-bottom: 1rem;
     margin-right: 0.5rem;
 
@@ -123,11 +122,9 @@ aside {
 
       & button {
         border-radius: 12px;
-        background: #7a5a1e;
+        background: #997023;
         color: #ffffff;
         padding: 0 0.6rem;
-        box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
-
         font-family: Inter;
         font-size: 10px;
         font-weight: 400;
@@ -137,7 +134,9 @@ aside {
   }
 
   & .products__card:hover {
+    
     background-color: #f0e8e8;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border: 4px 4px 2px rgba(0, 0, 0, 0.25);
     font-weight: bold;
     box-shadow: none;
@@ -262,25 +261,10 @@ aside {
   
         & button {
           border-radius: 12px;
-          background: #7a5a1e;
-          color: #ffffff;
           padding: 0 0.4rem;
-          box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
-  
-          font-family: Inter;
           font-size: 8px;
-          font-weight: 400;
-          color: #ffffff;
         }
       }
-    }
-  
-    & .products__card:hover {
-      background-color: #f0e8e8;
-      border: 4px 4px 2px rgba(0, 0, 0, 0.25);
-      font-weight: bold;
-      box-shadow: none;
-      scale: 1.1;
     }
   }
 }
