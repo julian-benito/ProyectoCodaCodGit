@@ -1,10 +1,11 @@
 @import url(/styles/navbar.css);
+@import url(/styles/footer.css);
 
 /*----------------------------------------LANDING-------------------------------------------------------*/
 
 .layout__container {
   box-sizing: border-box;
-  width: 98.7vw;
+  width: 99.3vw;
   height: 100vh;
   overflow: hidden;
   background-image: url(/imagenes/Cafe/fondoblanco.jpg);
@@ -708,51 +709,3 @@
   }
 }
 
-/*-----------*/
-
-.footer__container {
-  border-radius: 20px 20px 0px 0px;
-  opacity: 0.9;
-  background: #fffbfb;
-  box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 3rem;
-  margin-top: -0.7rem;
-
-  width: 98.79vw;
-
-  h5 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    line-height: 32.76px;
-  }
-
-  h6 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 10px;
-    font-weight: normal;
-    line-height: 32.76px;
-  }
-
-  h4 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 22px;
-    font-weight: normal;
-    line-height: 32.76px;
-  }
-
-  figure {
-    display: flex;
-    width: 1.5rem;
-    height: 1.5rem;
-    padding: 0.5rem 0;
-  }
-
-  img {
-    margin-right: 0.3rem;
-  }
-}

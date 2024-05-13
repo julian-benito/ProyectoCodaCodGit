@@ -1,0 +1,49 @@
+.footer__container {
+    border-radius: 20px 20px 0px 0px;
+    opacity: 0.9;
+    background: #fffbfb;
+    box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    
+  
+    width: 99.vw;
+    height: auto;
+  
+    h5 {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 12px;
+      font-weight: normal;
+      line-height: 32.76px;
+    }
+  
+    h6 {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 10px;
+      font-weight: normal;
+      line-height: 32.76px;
+    }
+  
+    h4 {
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 22px;
+      font-weight: normal;
+      line-height: 32.76px;
+    }
+  
+    figure {
+      display: flex;
+      width: 1.5rem;
+      height: 1.5rem;
+      padding: 0.5rem 0;
+    }
+  
+    img {
+      margin-right: 0.3rem;
+    }
+  }
+  

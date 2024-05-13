@@ -1,11 +1,12 @@
 @import url(/styles/navbar.css);
+@import url(/styles/footer.css);
 
 /*----------------------------------------NOSOTROS-------------------------------------------------------*/
 
 .nosotros__container {
   position: relative;
   box-sizing: border-box;
-  width: 98.7vw;
+  width: 99.3vw;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -39,6 +40,7 @@
   }
 
   & .nosotros__text {
+    border: 1px solid red;
     width: 50%;
     font-family: Inter;
     font-size: clamp(1.1rem, -0.25rem + 3.333vw, 1.35rem);
@@ -46,7 +48,7 @@
     line-height: 32px;
     letter-spacing: 0px;
     color: #000000;
-    padding: 3rem 7rem;
+    padding: 3rem 7rem 1rem 7rem;
 
     overflow: hidden;
     margin: 0 auto;
@@ -57,6 +59,7 @@
     }
 
     & .salud {
+      border: 1px solid blue;
       font-family: Inter;
       font-size: 20px;
       font-weight: bold;
@@ -74,7 +77,7 @@
   object-fit: contain;
   position: absolute;
   top: 36%;
-  left: -15vw;
+  left: -18vw;
   height: 110%;
   opacity: 0.95;
   
@@ -94,55 +97,6 @@
   transform: translateX(0);
 }
 
-
-/*------------*/
-
-.footer__container {
-  border-radius: 20px 20px 0px 0px;
-  opacity: 0.9;
-  background: #fffbfb;
-  box-shadow: -4px -4px 4px rgba(0, 0, 0, 0.25);
-  box-sizing: border-box;
-
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem 3rem;
-  margin-top: 0.5rem;
-
-  width: 98.79vw;
-
-  h5 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 12px;
-    font-weight: normal;
-    line-height: 32.76px;
-  }
-
-  h6 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 10px;
-    font-weight: normal;
-    line-height: 32.76px;
-  }
-
-  h4 {
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 22px;
-    font-weight: normal;
-    line-height: 32.76px;
-  }
-
-  figure {
-    display: flex;
-    width: 1.5rem;
-    height: 1.5rem;
-    padding: 0.5rem 0;
-  }
-
-  img {
-    margin-right: 0.3rem;
-  }
-}
 
 /*----------------------RESPONSIVE-------------------*/
 
@@ -178,7 +132,7 @@
 
     & .nosotros__text {
       width: 90%;
-      padding: 3rem 2rem;
+      padding: 3rem 2rem 0 3rem;
     }
   }  
 }

@@ -2,10 +2,37 @@
   border: 0;
   margin: 0;
   padding: 0;
+
 }
 
 body {
   position: relative;
+}
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+body::-webkit-scrollbar:vertical {
+  width:10px;
+}
+
+body::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
+  display: none;
+} 
+
+.contenedor::-webkit-scrollbar:horizontal {
+  height: 5px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #797979;
+  border-radius: 20px;
+  border: 2px solid #f1f2f3;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 10px;  
 }
 
 .nav__container {
@@ -26,6 +53,10 @@ body {
   position: fixed;
   top: 0%;
   z-index: 99;
+}
+
+.nav__container::-webkit-scrollbar {
+  -webkit-appearance: none;
 }
 
 .img__logo {

@@ -56,7 +56,7 @@ function checkTexts(){
 /*-------carousel index productos-----------*/
 const carousel = document.querySelector('.carousel');
 const prevButton = document.querySelector('.left');
-const nextButton = document.querySelector('.rigth');
+const nextButton = document.querySelector('.right');
 
 prevButton.addEventListener('click', function () {
   carousel.scrollBy({
