@@ -261,7 +261,7 @@
         border-radius: 18px;
         margin: 1rem 0 2rem 0;
         filter: contrast(96%);
-        background-color: #b99d4d;
+        background-color: #c7aa5a;
         cursor: pointer;
 
         & h3 {
@@ -590,7 +590,6 @@
         }
   
         & article:hover {
-          background-color: #d4d1cdc7;
           scale: 1;
   
           & h3 {
