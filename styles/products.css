@@ -564,7 +564,6 @@
       margin-top: 5rem;
 
       & .contenedor__tazas {
-        border: 1px solid red;
         width: 100%;
         display: flex;
         flex-direction: row;
@@ -590,7 +589,7 @@
   }
 
   .footer {
-    padding: 6rem 0 6rem 2rem;
+    padding: 6rem 0 1rem 2rem;
     & .footer__cards {
       position: relative;
       overflow-x: scroll;

@@ -2,7 +2,7 @@
   border-radius: 20px 20px 0px 0px;
   opacity: 0.9;
   background: #fffbfb;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   box-sizing: border-box;
 
   display: flex;
@@ -10,7 +10,7 @@
   justify-content: space-between;
   padding: 1.5rem 3rem;
 
-  width: 99vw;
+  width: 99.3vw;
   height: auto;
   overflow-x: hidden;
 
@@ -51,6 +51,7 @@
   .footer__container {
     padding: 0.1rem 3.3rem;
     height: auto;
+    margin-top: 3rem;
 
     & h5 {
       font-family: "Josefin Sans", sans-serif;
@@ -76,14 +77,12 @@
 
     & .footer__left {
       box-sizing: border-box;
-      border: 1px solid red;
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
 
       & figure {
-        border: 1px solid blue;
         display: flex;
         width: auto;
         padding: 0.5rem 0;

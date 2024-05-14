@@ -40,7 +40,6 @@
   }
 
   & .nosotros__text {
-    border: 1px solid red;
     width: 50%;
     font-family: Inter;
     font-size: clamp(1.1rem, -0.25rem + 3.333vw, 1.35rem);
@@ -48,7 +47,7 @@
     line-height: 32px;
     letter-spacing: 0px;
     color: #000000;
-    padding: 3rem 7rem 1rem 7rem;
+    padding: 2rem 7rem 2rem 7rem;
 
     overflow: hidden;
     margin: 0 auto;
@@ -59,7 +58,6 @@
     }
 
     & .salud {
-      border: 1px solid blue;
       font-family: Inter;
       font-size: 20px;
       font-weight: bold;

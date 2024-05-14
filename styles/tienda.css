@@ -19,7 +19,7 @@ aside {
   padding: 0.5rem;
   position: sticky;
   top: 10.5%;
-  background-color: #f3f0f0de;
+  background-color: #e9e5e5de;
   position: relative;
 
   & .filters__title {
@@ -42,7 +42,7 @@ aside {
       font-weight: normal;
       line-height: 18.72px;
       letter-spacing: 0px;
-      color: #353333;
+      color: #1d1c1c;
     }
 
     h6{
@@ -123,7 +123,7 @@ aside {
 
       & button {
         border-radius: 12px;
-        background: #997023;
+        background: #202020e5;
         color: #ffffff;
         padding: 0 0.6rem;
         font-family: Inter;
@@ -136,7 +136,7 @@ aside {
 
   & .products__card:hover {
     
-    background-color: #f0e8e8;
+    background-color: #e0d6d6;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     border: 4px 4px 2px rgba(0, 0, 0, 0.25);
     font-weight: bold;
