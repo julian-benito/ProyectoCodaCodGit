@@ -589,7 +589,7 @@
   }
 
   .footer {
-    padding: 6rem 0 1rem 2rem;
+    padding: 6rem 0 4rem 2rem;
     & .footer__cards {
       position: relative;
       overflow-x: scroll;

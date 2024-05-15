@@ -51,7 +51,6 @@
   .footer__container {
     padding: 0.1rem 3.3rem;
     height: auto;
-    margin-top: 3rem;
 
     & h5 {
       font-family: "Josefin Sans", sans-serif;

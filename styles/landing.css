@@ -28,6 +28,7 @@
     align-items: center;
     opacity: 0;
     animation: myAnim 2s ease 0s 1 normal forwards;
+    filter: contrast(10%);
   }
 
   & h1 {
@@ -36,10 +37,11 @@
     font-weight: 700;
     font-size: clamp(2rem, -1.077rem + 12.308vw, 6.5rem);
     text-align: center;
-    color: #825a2b;
+    color: #a9904e;
     opacity: 0;
     text-shadow: 14px 14px 14px 22px rgba(0, 0, 0, 0.952);
     animation: titulo 2s ease 0s 1 normal forwards;
+    filter: contrast(10%);
   }
 
   .title__texts {
@@ -261,7 +263,7 @@
         border-radius: 18px;
         margin: 1rem 0 2rem 0;
         filter: contrast(96%);
-        background-color: #c7aa5a;
+        background-color: #a9904e;
         cursor: pointer;
 
         & h3 {
@@ -335,6 +337,7 @@
       height: 100%;
       object-fit: cover;
       border-radius: 18px;
+      filter:contrast(96%);
     }
   }
 
@@ -390,6 +393,7 @@
       height: 100%;
       object-fit: cover;
       border-radius: 18px;
+      filter:contrast(96%);
     }
   }
 
@@ -420,7 +424,8 @@
     }
 
     & input {
-      background-color: #85714e;
+      background-color: #a9904e;
+      filter:contrast(96%);
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       padding: 1rem 2rem;
       border-radius: 18px;
@@ -550,6 +555,15 @@
     width: 100%;
     height: auto;
     margin: 7rem 1rem 3rem 0.2rem;
+
+    h2::before{
+      content: '';
+      position: absolute;
+      width: 70%;
+      height: 2px;
+      left: 15%;
+      
+    }
   
     & .cafes {
 
@@ -664,9 +678,10 @@
     height: 65vh;
     display: flex;
     flex-direction: column;
-    margin: 6rem 0 7rem 0;
+    margin: 6rem 0 0 0;
     border-radius: 18px;
     overflow-x: hidden;
+    padding-bottom: 3rem;
   
     & figure {
       margin-left: -0.1rem;

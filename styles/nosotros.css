@@ -13,6 +13,7 @@
   margin-top: 7vh;
   overflow: hidden;
   background-image: linear-gradient(120deg, #fdfbfb 0%, #f5f7f8 100%);
+  padding-bottom: 3rem;
 
   & h3 {
     font-family: Inter;
