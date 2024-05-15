@@ -5,7 +5,7 @@
 
 .container {
   box-sizing: border-box;
-  width: 99.5vw;
+  width: 99.3vw;
   height: auto;
 }
 
@@ -18,7 +18,7 @@
 
 .derecha {
   box-sizing: border-box;
-  width: 50%;
+  width: 49%;
   height: auto;
   background-image: url(/imagenes/Cafe/fondoproductos2.jpg);
   background-size: contain;
@@ -66,7 +66,7 @@
 }
 
 .izquierda {
-  width: 50%;
+  width: 49%;
   height: auto;
 
   & .principal {
@@ -79,6 +79,7 @@
     align-items: flex-start;
     padding-left: 4rem;
     gap: 2rem;
+    overflow-x: hidden;
 
     & h3 {
       font-family: "Josefin Sans", sans-serif;
@@ -268,6 +269,7 @@
       & h3 {
         text-shadow: 4px 4px 4px 4px rgba(86, 30, 112, 0.788);
         color: #6d1591;
+        font-size: clamp(3rem, 1.462rem + 6.154vw, 6.4rem);
       }
     }
   }
@@ -298,7 +300,7 @@
   }
 }
 
-.footer {
+.main__footer {
   box-sizing: border-box;
   width: 98.7vw;
   height: auto;
@@ -588,7 +590,7 @@
     }
   }
 
-  .footer {
+  .main__footer {
     padding: 6rem 0 4rem 2rem;
     & .footer__cards {
       position: relative;
@@ -596,6 +598,7 @@
       overflow-y: hidden;
       scroll-snap-type: x mandatory;
       gap: 2rem;
+      width: 95%;
   
       & article {
         opacity: 1;
