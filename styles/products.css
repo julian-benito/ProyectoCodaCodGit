@@ -79,7 +79,6 @@
     align-items: flex-start;
     padding-left: 4rem;
     gap: 2rem;
-    overflow-x: hidden;
 
     & h3 {
       font-family: "Josefin Sans", sans-serif;
@@ -557,7 +556,7 @@
   }
 
   .izquierda {
-    width: 100vw;
+    width: 100vw !important;
     height: auto;
 
     & .principal {
