@@ -28,7 +28,6 @@
     align-items: center;
     opacity: 0;
     animation: myAnim 2s ease 0s 1 normal forwards;
-    filter: contrast(10%);
   }
 
   & h1 {
@@ -37,7 +36,7 @@
     font-weight: 700;
     font-size: clamp(2rem, -1.077rem + 12.308vw, 6.5rem);
     text-align: center;
-    color: #a9904e;
+    color: #85714e;
     opacity: 0;
     text-shadow: 14px 14px 14px 22px rgba(0, 0, 0, 0.952);
     animation: titulo 2s ease 0s 1 normal forwards;
@@ -424,7 +423,7 @@
     }
 
     & input {
-      background-color: #a9904e;
+      background-color: #85714e;
       filter:contrast(96%);
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       padding: 1rem 2rem;
