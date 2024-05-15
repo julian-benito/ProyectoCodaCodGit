@@ -73,6 +73,10 @@ function mostrarArticulo(id) {
   const productoVisible = document.getElementById(id);
   if (productoVisible) {
     productoVisible.style.display = "flex";
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
   }
 }
 
