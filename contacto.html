@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoffeeBean</title>
+  <link rel="icon" href="/imagenes/iconos/iconoweb.png">
+
+  <link rel="stylesheet" href="/styles/landing.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-MRAq2oCtjLlPjkkZN4CBAmOzDzSAQys/Du6Z/QD+8fJ72/9xv2fqWVRxyt9OaLRm" crossorigin="anonymous">
+
+  <script src="/js/index.js" defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Cafetería</title>
+  <link rel="stylesheet" href="/styles/contacto.css">
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="nav__container">
+
+      <div class="nav__mobile">
+        <a href="/index.html"><img src="./imagenes/iconos/icono3.png" alt="" class="img__logo"></a>
+        <a class="abrirMenu" id="abrir"><img src="/imagenes/iconos/align-justify.png" alt="" class="abrir"></a>
+        <a class="cerrarMenu" id="cerrar" class="cerrar"><img src="/imagenes/iconos/cerrar.png" alt=""></a>
+      </div>
+
+      <div class="nav__menu nav__oculto">
+
+        <ul class="nav__links">
+          <li class="links__link link__mobile"><a href="/usuario.html" class="link__enlace">Usuario</a></li>
+          <li class="links__link link__mobile"><a href="/carrito.html" class="link__enlace">Carrito</a></li>
+          <li class="links__link"><a href="/products.html" class="link__enlace">Productos</a></li>
+          <li class="links__link"><a href="/tienda.html" class="link__enlace">Tienda</a></li>
+          <li class="links__link"><a href="/nosotros.html" class="link__enlace">Nosotros</a></li>
+          <li class="links__link"><a href="/contacto.html" class="link__enlace">Contacto</a></li>
+
+        </ul>
+
+        <div class="nav__icons">
+          <img src="./Imagenes/iconos/shopping-cart.png" alt="" class="nav__icon">
+          <img src="./Imagenes/iconos/user.png" alt="" class="nav__icon">
+        </div>
+
+      </div>
+
+    </div>
+
+  </nav>
+<body>
+    <header>
+        <h1>Coffee Bean</h1>
+    </header>
+
+    <main>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <form action="/submit_form" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                </div>
+                <button type="submit">Enviar</button>
+            </form>
+            
+            <div id="ubicacion">
+                <h3>Nuestra Ubicación</h3>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345094327!2d144.95373531550457!3d-37.8162791797517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf577e10e3dabc6d4!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1602143792974!5m2!1sen!2sau" width="600" height="450" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 CoffeeBean. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

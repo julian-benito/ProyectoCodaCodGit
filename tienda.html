@@ -14,6 +14,9 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <script src="/js/index.js" defer></script>
+  <script src="/js/carrito.js" defer></script>
+
+
 </head>
 
 <body>
@@ -229,7 +232,18 @@
         </div>
 
       </article>
-
+      
+<aside class="tienda__carrito">
+  <h2>Carrito de Compras</h2>
+  <ul id="carrito-lista">
+    <!-- Aquí se agregarán los productos del carrito -->
+  </ul>
+  <div id="carrito-total">
+    <h3>Total: $0</h3>
+    <button id="vaciar-carrito">Vaciar Carrito</button>
+    <button id="realizar-pedido">Realizar Pedido</button>
+  </div>
+</aside>
     </div>
   </section>
 
