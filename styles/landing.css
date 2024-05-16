@@ -36,7 +36,7 @@
     font-weight: 700;
     font-size: clamp(2rem, -1.077rem + 12.308vw, 6.5rem);
     text-align: center;
-    color: #85714e;
+    color: #7d5629;
     opacity: 0;
     text-shadow: 14px 14px 14px 22px rgba(0, 0, 0, 0.952);
     animation: titulo 2s ease 0s 1 normal forwards;

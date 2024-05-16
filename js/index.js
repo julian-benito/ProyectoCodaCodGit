@@ -1,4 +1,4 @@
-/*NAVBAR RESPONSIVE*/ 
+/*------------------NAVBAR RESPONSIVE-----------------*/ 
 
 const navMenu = document.querySelector('.nav__menu');
 const abrir = document.querySelector('#abrir');
@@ -33,19 +33,19 @@ function navResponsive() {
 navResponsive();
 
 
-/*ANIMACION TEXTOS NOSOTROS*/
+/*--------------------ANIMACION TEXTOS NOSOTROS----------------------*/
 
-const texts = document.querySelectorAll('.text__animation');
+const textos = document.querySelectorAll('.text__animation');
 
 window.addEventListener('scroll', checkTexts);
 
 function checkTexts(){
-  const triggerTexts = window.innerHeight / 5 * 4
+  const entradaTexto = window.innerHeight / 5 * 4
 
-  texts.forEach(text => {
+  textos.forEach(text => {
     const textTop = text.getBoundingClientRect().top
 
-    if(textTop < triggerTexts){
+    if(textTop < entradaTexto){
       text.classList.add('show')
     } else {
       text.classList.remove('show')
@@ -53,7 +53,35 @@ function checkTexts(){
   })
 }
 
-/*-------carousel index productos-----------*/
+
+/*-------------------NAVEGADOR SECCION PRODUCTOS------------------------*/
+
+  const botones = document.querySelectorAll('.card__button');
+  botones.forEach(function(boton) {
+      boton.addEventListener('click', function() {
+          const id = this.dataset.target;
+          mostrarArticulo(id);
+      });
+  });
+
+function mostrarArticulo(id) {
+  const productos = document.querySelectorAll('.producto');
+  productos.forEach(function(producto) {
+      producto.style.display = "none";
+  });
+
+  const productoVisible = document.getElementById(id);
+  if (productoVisible) {
+    productoVisible.style.display = "flex";
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+  });
+  }
+}
+
+/*-------CAROUSEL INDEX PRODUCTOS-----------*/
+
 const carousel = document.querySelector('.carousel');
 const prevButton = document.querySelector('.left');
 const nextButton = document.querySelector('.right');
@@ -71,3 +99,5 @@ nextButton.addEventListener('click', function () {
     behavior: 'smooth'
   });
 });
+
+
