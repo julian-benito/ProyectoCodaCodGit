@@ -126,6 +126,7 @@
 /*--------------------description--------------------------------------*/
 
 .main__container {
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #f5f7f8 100%);
   box-sizing: border-box;
   height: auto;
   width: 98.7vw;
@@ -140,7 +141,6 @@
   height: auto;
   display: flex;
   justify-content: space-between;
-  
 
   & div {
     box-sizing: border-box;
@@ -194,15 +194,14 @@
     position: relative;
   }
 
-  h2::before{
-    content: '';
+  h2::before {
+    content: "";
     position: absolute;
     width: 30%;
     height: 2px;
     top: 88%;
     left: 35%;
     background-color: #202020;
-    
   }
 
   & .cafes {
@@ -220,6 +219,7 @@
     & figure {
       width: 4%;
       height: 6rem;
+      cursor: pointer;
 
       & img {
         width: 100%;
@@ -228,9 +228,13 @@
       }
 
       & img {
-        width: 110%;
-        height: 110%;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
+      }
+
+      & img:hover {
+        scale: 1.5;
       }
     }
 
@@ -311,20 +315,18 @@
   }
 }
 
-
-
 /*-----------------------NOSOTROS----------------------------------*/
 
 .about {
   box-sizing: border-box;
   margin: 12rem 0 3rem 0;
   width: 100%;
-  height: 65vh;
+  height: auto;
+  min-height: 70vh;
   overflow: hidden;
   display: flex;
   justify-content: space-between;
   border-radius: 18px;
-  
 
   & figure {
     width: 50%;
@@ -336,7 +338,7 @@
       height: 100%;
       object-fit: cover;
       border-radius: 18px;
-      filter:contrast(96%);
+      filter: contrast(96%);
     }
   }
 
@@ -378,7 +380,6 @@
   display: flex;
   margin: 10rem 0 7rem 0;
   border-radius: 18px;
-  
 
   & figure {
     width: 40%;
@@ -392,7 +393,7 @@
       height: 100%;
       object-fit: cover;
       border-radius: 18px;
-      filter:contrast(96%);
+      filter: contrast(96%);
     }
   }
 
@@ -424,7 +425,7 @@
 
     & input {
       background-color: #85714e;
-      filter:contrast(96%);
+      filter: contrast(96%);
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       padding: 1rem 2rem;
       border-radius: 18px;
@@ -440,7 +441,7 @@
 
 /*-----------------Responsive------------------*/
 
-@media (578px < width < 800px) {
+@media (578px < width < 1100px) {
   .layout__container {
     background-image: url(/imagenes/Cafe/fondoblancomobile.jpg);
 
@@ -461,6 +462,141 @@
       & h4 {
         font-size: 0.9rem;
         line-height: 1rem;
+      }
+    }
+  }
+
+  .main__container {
+    height: auto;
+    width: 99.3vw;
+    padding: 0 6rem;
+  }
+
+  .description {
+    height: auto;
+    min-height: 250px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+    & div {
+      width: auto;
+      justify-content: flex-end;
+      justify-items: first baseline;
+      align-items: center;
+      gap: 1.3rem;
+    }
+  }
+
+  .productos {
+    width: 100%;
+    height: auto;
+    min-height: 550px;
+
+    h2::before {
+      content: "";
+      position: absolute;
+      width: 40%;
+      height: 2px;
+      top: 88%;
+      left: 30%;
+      background-color: #202020;
+    }
+
+    & .cafes {
+      gap: 10px;
+
+      & .carousel {
+        grid-auto-columns: calc(100% / 3);
+
+        & article {
+          width: 85%;
+        }
+      }
+    }
+
+    & a {
+      margin-left: 15.5rem;
+    }
+  }
+
+  .about {
+    margin: 9rem 0 3rem 0;
+    width: 100%;
+    height: auto;
+    min-height: 600px;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 18px;
+
+    & figure {
+      width: 100%;
+      box-shadow: rgba(17, 12, 46, 0.15) 0px 28px 150px 0px;
+
+      & img {
+        width: 100%;
+      }
+    }
+
+    & div {
+      margin-top: 1rem;
+      width: 100%;
+      gap: 3rem;
+
+      & p {
+        padding-top: 2rem;
+      }
+
+      & a {
+        margin: 0 auto
+      }
+    }
+  }
+
+  /*------------------------SUSCRIBE---------------------------------*/
+
+  .suscribe__container {
+    width: 100%;
+    height: 80vh;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 9rem 0 7rem 0;
+
+    & figure {
+      width: 100%;
+      height: 50%;
+      order: 2;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      order: 1;
+    }
+
+    & div {
+      box-sizing: border-box;
+      width: 100%;
+      height: 50%;
+      order: 2;
+      padding: 3rem;
+      gap: 1rem;
+
+      & h4 {
+        font-family: "Josefin Sans", sans-serif;
+        font-size: 1.8rem;
+        font-weight: 500;
+      }
+
+      & p {
+        margin-top: 0;
+      }
+
+      & input {
+        margin-top: 0;
+      }
+
+      & input::placeholder {
+        color: white;
       }
     }
   }
@@ -494,20 +630,18 @@
     }
   }
 
-  .main__container{
+  .main__container {
     padding: 0 1rem;
     width: 100vw;
     overflow-x: hidden;
-
   }
 
   .description {
-    
     overflow-x: scroll;
     overflow-y: hidden;
     scroll-snap-type: x mandatory;
     align-items: start;
-  
+
     & div {
       left: 0;
       box-sizing: border-box;
@@ -515,17 +649,17 @@
       height: 100%;
       flex: 0 0 100%;
       scroll-snap-align: start;
-  
+
       & img {
         width: 20%;
         object-fit: cover;
       }
-  
+
       & h5 {
         font-family: "Josefin Sans", sans-serif;
         font-size: 1rem 0;
       }
-  
+
       & p {
         font-family: "Josefin Sans", sans-serif;
         font-weight: 400;
@@ -555,27 +689,25 @@
     height: auto;
     margin: 7rem 1rem 3rem 0.2rem;
 
-    h2::before{
-      content: '';
+    h2::before {
+      content: "";
       position: absolute;
       width: 70%;
       height: 2px;
       left: 15%;
-      
     }
-  
-    & .cafes {
 
+    & .cafes {
       & figure {
         width: 8%;
         height: 6rem;
-  
+
         & img {
           width: 100%;
           height: 100%;
           object-fit: contain;
         }
-  
+
         & img {
           width: 110%;
           height: 110%;
@@ -587,7 +719,7 @@
         width: 70%;
         grid-auto-columns: calc(100% / 1);
         gap: 1.3rem;
-  
+
         & article {
           width: 100%;
           height: 320px;
@@ -601,17 +733,17 @@
             width: 100%;
           }
         }
-  
+
         & article:hover {
           scale: 1;
-  
+
           & h3 {
             font-size: 1.3rem;
           }
         }
       }
     }
-  
+
     & a {
       padding: 1.2rem 3.5rem;
       color: white;
@@ -628,39 +760,39 @@
     margin: 10rem 0 3rem 0;
     width: 100%;
     height: 68vh;
+    min-height: 600px;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 15rem;
-    
+
     border-radius: 18px;
-    
-  
+
     & figure {
       width: 99.8%;
       border-radius: 18px;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  
+
       & img {
         width: 100%;
       }
     }
-  
+
     & div {
       width: 100%;
       height: auto;
       padding: 3rem 0;
       display: flex;
       flex-direction: column;
-  
+
       & p {
         width: 80%;
         height: auto;
         font-weight: 350;
         margin: 0 auto;
       }
-  
+
       & a {
         width: 16%;
         padding: 1.4rem 2.5rem;
@@ -670,18 +802,19 @@
       }
     }
   }
-  
+
   .suscribe__container {
     box-sizing: border-box;
     width: 100%;
     height: 65vh;
+    min-height: 600px;
     display: flex;
     flex-direction: column;
     margin: 6rem 0 0 0;
     border-radius: 18px;
     overflow-x: hidden;
     padding-bottom: 3rem;
-  
+
     & figure {
       margin-left: -0.1rem;
       width: 100%;
@@ -689,7 +822,7 @@
       order: 1;
       border-radius: 18px;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  
+
       & img {
         width: 100%;
         height: 100%;
@@ -697,7 +830,7 @@
         border-radius: 18px;
       }
     }
-  
+
     & div {
       width: 100%;
       height: 60%;
@@ -707,30 +840,28 @@
       align-items: center;
       justify-content: space-around;
       padding: 0;
-  
+
       & h4 {
         font-size: 1.3rem;
         margin-top: 2rem;
       }
-  
+
       & p {
         margin-top: -1rem;
         width: 80%;
         height: auto;
         line-height: 1.4rem;
       }
-  
+
       & input {
-        
         padding: 1rem 2rem;
         border-radius: 18px;
         margin-top: -3rem;
       }
-  
+
       & input::placeholder {
         color: white;
       }
     }
   }
 }
-

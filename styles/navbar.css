@@ -39,6 +39,7 @@ body::-webkit-scrollbar-track {
   box-sizing: border-box;
   width: 100vw;
   height: 7.3vh;
+  max-height: 60px;
   padding: 8px;
   overflow-x: hidden;
 
