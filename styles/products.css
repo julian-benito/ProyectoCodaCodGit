@@ -7,6 +7,7 @@
   box-sizing: border-box;
   width: 99.3vw;
   height: auto;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #f5f7f8 100%);
 }
 
 .producto {
@@ -24,6 +25,7 @@
   background-size: contain;
   background-repeat: repeat;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  border-radius: 18px;
 
   & .product__carrousel {
     box-sizing: border-box;
