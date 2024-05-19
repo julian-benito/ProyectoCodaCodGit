@@ -5,7 +5,7 @@ section {
   overflow: hidden;
   width: 99.3vw;
   height: auto;
-  background: linear-gradient(to bottom, #cac066 40%, #f5f7f8 10%);
+  background: linear-gradient(to bottom, #caaa66 40%, #f5f7f8 10%);
 
   & #ubicacion {
     margin-top: 3rem;
@@ -33,6 +33,7 @@ section {
     font-weight: 360;
     color: #202020;
     position: relative;
+    margin-top: 1.3rem;
   }
 
   & h2::before {
@@ -75,7 +76,7 @@ section {
 
       & input {
         border-radius: 8px;
-        border: 1px solid #cfcbcb7c;
+        border: 1px solid #cfcbcba9;
         padding: 0.5rem;
         width: 100%;
         font-family: "Josefin Sans", sans-serif;
@@ -83,7 +84,7 @@ section {
 
       & select {
         border-radius: 8px;
-        border: 1px solid #cfcbcb7c;
+        border: 1px solid #cfcbcba9;
         padding: 0.5rem;
         width: 107%;
         font-family: "Josefin Sans", sans-serif;
@@ -186,4 +187,140 @@ section {
       object-fit: cover;
     }
   }
+}
+
+/*---------------------RESPONSIVE------------------*/
+
+@media screen and (max-width: 578px) {
+
+  section {
+  overflow: hidden;
+  width: 99.3vw;
+  height: auto;
+  background: linear-gradient(to bottom, #caaa66 50%, #f5f7f8 50%);
+
+  & #ubicacion {
+    height: 25vh;
+  }
+}
+
+.container {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 3rem 2rem;
+  
+
+  & h2 {
+    font-size: 1.7rem;
+    position: relative;
+  }
+
+  & h2::before {
+    width: 100%;
+  }
+
+  & form {
+    box-sizing: border-box;
+    margin-top: 2rem;
+    padding: 2rem ;
+    width: 100%;
+
+    & .form__control {
+      width: 92%;
+      
+      position: relative;
+
+      & input {
+        width: 100%;
+      }
+
+      & select {
+        width: 107%;
+      }
+
+      & small {
+        color: #e74c3c;
+        font-family: "Josefin Sans", sans-serif;
+        position: absolute;
+        top: 110%;
+        left: 0;
+        visibility: hidden;
+      }
+    }
+
+    & .form__control--texto {
+      width: 89%;
+      min-width: 89%;
+
+      & textarea {
+        border-radius: 8px;
+        border: 1px solid #cfcbcb7c;
+        padding: 1rem;
+        font-family: "Josefin Sans", sans-serif;
+        width: 100%;
+        min-width: 100%;
+        resize: none;
+      }
+    }
+
+    & .form__control--acepto {
+      font-family: "Josefin Sans", sans-serif;
+      width: 100%;
+      display: flex;
+      border: none;
+      margin-top: 0.5rem;
+
+      & label {
+        width: 68%;
+      }
+
+      & input {
+        width: 5%;
+      }
+    }
+
+    & button {
+      width: 94%;
+      background-color: #202020;
+      padding: 1rem;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+		& button:hover {
+      scale: 1.01;
+      background-color: #0f0f0f;
+      
+    }
+  }
+
+  & form::before {
+    content: url(/imagenes/Cafe/contacto.png);
+    position: absolute;
+    filter: drop-shadow(4px 4px 15px #a09e9e71);
+    top: 0%;
+    left: 100%;
+    z-index: 2;
+  }
+
+  & form::after {
+    content: url(/imagenes/Cafe/reflejo.png);
+    position: absolute;
+    top: 70%;
+    left: 100%;
+    z-index: 0;
+  }
+
+  & figure {
+    width: 30%;
+    height: auto;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
 }
