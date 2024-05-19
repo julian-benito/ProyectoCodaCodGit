@@ -15,16 +15,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <script src="/js/index.js" defer></script>
   <script src="/js/carrito.js" defer></script>
-
-
 </head>
 
 <body>
 
   <nav>
-
     <div class="nav__container">
-
       <div class="nav__mobile">
         <a href="/index.html"><img src="./imagenes/iconos/icono3.png" alt="" class="img__logo"></a>
         <a class="abrirMenu" id="abrir"><img src="/imagenes/iconos/align-justify.png" alt="" class="abrir"></a>
@@ -32,7 +28,6 @@
       </div>
 
       <div class="nav__menu nav__oculto">
-
         <ul class="nav__links">
           <li class="links__link link__mobile"><a href="/usuario.html" class="link__enlace">Usuario</a></li>
           <li class="links__link link__mobile"><a href="/carrito.html" class="link__enlace">Carrito</a></li>
@@ -40,25 +35,19 @@
           <li class="links__link"><a href="/tienda.html" class="link__enlace">Tienda</a></li>
           <li class="links__link"><a href="/nosotros.html" class="link__enlace">Nosotros</a></li>
           <li class="links__link"><a href="/contacto.html" class="link__enlace">Contacto</a></li>
-
         </ul>
 
         <div class="nav__icons">
           <img src="./Imagenes/iconos/shopping-cart.png" alt="" class="nav__icon">
           <img src="./Imagenes/iconos/user.png" alt="" class="nav__icon">
         </div>
-
       </div>
-
     </div>
-
   </nav>
 
   <section class="tienda" id="tienda">
     <div class="container">
-
       <aside class="tienda__filters">
-
         <div class="filters__title">
           <h5>Filtros</h5>
           <img src="/Imagenes/iconos/sliders.png" alt="">
@@ -84,169 +73,108 @@
             <label for="arabica">Arabica<input type="checkbox" id="arabica" name="checkbox"></label>
             <label for="robusta">Robusta<input type="checkbox" id="robusta" name="checkbox"></label>
           </div>
-
         </div>
-
       </aside>
 
       <article class="tienda__products">
-
         <div class="products__card">
-
           <img src="/Imagenes/Cafe/afeb7193-8c0f-4d84-8770-3b0bd677d276-removebg-preview.png" alt="" class="card__img card__img1">
-
           <div class="card__texts">
-
             <h5>Blue Mountain</h5>
-
             <h6>Jamaica</h6>
-
             <div class="card__price">
-
               <h6>$500</h6>
-              <button>Añadir</button>
-
+              <button class="agregar-carrito" data-nombre="Blue Mountain" data-precio="500">Añadir</button>
             </div>
           </div>
-
         </div>
 
         <div class="products__card">
-
           <img src="/Imagenes/Cafe/dorado-removebg-preview.png" alt="" class="card__img">
-
           <div class="card__texts">
-
             <h5>Supremo</h5>
-
             <h6>Colombia</h6>
-
             <div class="card__price">
-
               <h6>$500</h6>
-              <button>Añadir</button>
-
+              <button class="agregar-carrito" data-nombre="Supremo" data-precio="500">Añadir</button>
             </div>
           </div>
-
         </div>
 
         <div class="products__card">
-
           <img src="/Imagenes/Cafe/negro-removebg-preview.png" alt="" class="card__img">
-
           <div class="card__texts">
-
             <h5>Antigua</h5>
-
             <h6>Guatemala</h6>
-
             <div class="card__price">
-
               <h6>$500</h6>
-              <button>Añadir</button>
-
+              <button class="agregar-carrito" data-nombre="Antigua" data-precio="500">Añadir</button>
             </div>
           </div>
-
         </div>
 
         <div class="products__card">
-
           <img src="/Imagenes/Cafe/rojo-removebg-preview.png" alt="" class="card__img">
-
           <div class="card__texts">
-
             <h5>Yirgacheffe</h5>
-
             <h6>Etiopia</h6>
-
             <div class="card__price">
-
               <h6>$500</h6>
-              <button>Añadir</button>
-
+              <button class="agregar-carrito" data-nombre="Yirgacheffe" data-precio="500">Añadir</button>
             </div>
           </div>
-
         </div>
 
         <div class="products__card">
-
           <img src="/Imagenes/Cafe/verdee.png" alt="" class="card__img">
-
           <div class="card__texts">
-
             <h5>Santos</h5>
-
             <h6>Brasil</h6>
-
             <div class="card__price">
-
               <h6>$500</h6>
-              <button>Añadir</button>
-
+              <button class="agregar-carrito" data-nombre="Santos" data-precio="500">Añadir</button>
             </div>
           </div>
-
         </div>
 
         <div class="products__card">
-
           <img src="/Imagenes/Cafe/violeta-removebg-preview.png" alt="" class="card__img card__img--bottle">
-
           <div class="card__texts">
-
             <h5>Mandheling</h5>
-
             <h6>Indonesia</h6>
-
             <div class="card__price">
-
               <h6>$500</h6>
-              <button>Añadir</button>
-
+              <button class="agregar-carrito" data-nombre="Mandheling" data-precio="500">Añadir</button>
             </div>
           </div>
-
         </div>
 
         <div class="products__card">
-
           <img src="/Imagenes/Cafe/verde-removebg-preview.png" alt="" class="card__img card__img--bottle">
-
           <div class="card__texts">
-
-            <h5>Tarrazú</h5>
-
+            <h5>Tarrazú</h6>
             <h6>Costa Rica</h6>
-
             <div class="card__price">
-
               <h6>$500</h6>
-              <button>Añadir</button>
-
+              <button class="agregar-carrito" data-nombre="Tarrazú" data-precio="500">Añadir</button>
             </div>
           </div>
-
         </div>
-
       </article>
       
-<aside class="tienda__carrito">
-  <h2>Carrito de Compras</h2>
-  <ul id="carrito-lista">
-    <!-- Aquí se agregarán los productos del carrito -->
-  </ul>
-  <div id="carrito-total">
-    <h3>Total: $0</h3>
-    <button id="vaciar-carrito">Vaciar Carrito</button>
-    <button id="realizar-pedido">Realizar Pedido</button>
-  </div>
-</aside>
+      <aside class="tienda__carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito-lista">
+          <!-- Aquí se agregarán los productos del carrito -->
+        </ul>
+        <div id="carrito-total">
+          <h3>Total: $0</h3>
+          <button id="vaciar-carrito">Vaciar Carrito</button>
+          <button id="realizar-pedido">Realizar Pedido</button>
+        </div>
+      </aside>
     </div>
   </section>
-
 
   <footer>
     <div class="footer__container">
@@ -268,5 +196,4 @@
   </footer>
 
 </body>
-
 </html>
