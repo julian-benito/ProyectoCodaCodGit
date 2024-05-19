@@ -1,8 +1,7 @@
-// carrito.js
 document.addEventListener('DOMContentLoaded', function () {
   const botonesAgregar = document.querySelectorAll('.agregar-carrito');
   const carritoLista = document.getElementById('carrito-lista');
-  const carritoTotal = document.getElementById('carrito-total h3');
+  const carritoTotal = document.querySelector('#carrito-total h3');
   const vaciarCarritoBtn = document.getElementById('vaciar-carrito');
   const realizarPedidoBtn = document.getElementById('realizar-pedido');
 
@@ -31,9 +30,17 @@ document.addEventListener('DOMContentLoaded', function () {
     const productoExistente = carrito.find(item => item.nombre === nombre);
 
     if (productoExistente) {
-      productoExistente.cantidad += cantidad;
+      if (productoExistente.cantidad + cantidad <= 10) {
+        productoExistente.cantidad += cantidad;
+      } else {
+        alert('No puedes agregar más de 10 unidades de este producto.');
+      }
     } else {
-      carrito.push({ nombre, precio, cantidad });
+      if (cantidad <= 10) {
+        carrito.push({ nombre, precio, cantidad });
+      } else {
+        alert('No puedes agregar más de 10 unidades de este producto.');
+      }
     }
 
     actualizarCarrito();
@@ -43,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const producto = carrito.find(item => item.nombre === nombre);
 
     if (producto) {
-      if (operacion === 'sumar') {
+      if (operacion === 'sumar' && producto.cantidad < 10) {
         producto.cantidad++;
       } else if (operacion === 'restar') {
         producto.cantidad--;
@@ -59,9 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
     boton.addEventListener('click', function () {
       const nombre = this.getAttribute('data-nombre');
       const precio = parseInt(this.getAttribute('data-precio'));
-      const cantidadInput = this.previousElementSibling;
-      const cantidad = parseInt(cantidadInput.value);
-      agregarProducto(nombre, precio, cantidad);
+      agregarProducto(nombre, precio, 1);
     });
   });
 

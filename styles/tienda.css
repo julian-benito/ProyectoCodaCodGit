@@ -122,10 +122,12 @@ aside.tienda__carrito {
   border: 1px solid black;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   position: sticky;
-  top: 10.5%;
+  top: 20px; /* Agrega el margen superior */
+  margin-bottom: 30px; /* Agrega el margen inferior */
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 20px;
 
   & h2 {
     font-family: Josefin Sans;
