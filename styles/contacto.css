@@ -1,0 +1,189 @@
+@import url(/styles/navbar.css);
+@import url(/styles/footer.css);
+
+section {
+  overflow: hidden;
+  width: 99.3vw;
+  height: auto;
+  background: linear-gradient(to bottom, #cac066 40%, #f5f7f8 10%);
+
+  & #ubicacion {
+    margin-top: 3rem;
+    width: 100%;
+    height: 50vh;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+      rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+  }
+  & iframe {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.container {
+  width: 70%;
+  height: 100%;
+  padding: 3rem;
+  height: auto;
+  margin: 0 auto;
+
+  & h2 {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 2rem;
+    font-weight: 360;
+    color: #202020;
+    position: relative;
+  }
+
+  & h2::before {
+    content: "";
+    position: absolute;
+    width: 70%;
+    height: 1px;
+    background-color: #202020;
+    top: 105%;
+    border-radius: 5px;
+  }
+
+  & form {
+    box-sizing: border-box;
+    background-color: rgba(250, 250, 250, 0.267);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 12px;
+    margin-top: 2rem;
+    padding: 2rem ;
+    width: 70%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.7rem;
+    position: relative;
+
+    & h4 {
+      width: 100%;
+      font-family: "Josefin Sans", sans-serif;
+      font-size: 1rem;
+			font-weight: 400;
+
+      color: #202020;
+    }
+
+    & .form__control {
+      width: 45%;
+      
+      position: relative;
+
+      & input {
+        border-radius: 8px;
+        border: 1px solid #cfcbcb7c;
+        padding: 0.5rem;
+        width: 100%;
+        font-family: "Josefin Sans", sans-serif;
+      }
+
+      & select {
+        border-radius: 8px;
+        border: 1px solid #cfcbcb7c;
+        padding: 0.5rem;
+        width: 107%;
+        font-family: "Josefin Sans", sans-serif;
+        height: 100%;
+      }
+
+      & small {
+        color: #e74c3c;
+        font-family: "Josefin Sans", sans-serif;
+        position: absolute;
+        top: 110%;
+        left: 0;
+        visibility: hidden;
+      }
+    }
+
+    & .form__control.success input {
+      border-color: #2ecc71;
+    }
+    
+    & .form__control.error input {
+      border-color: #e74c3c;
+    }
+    
+    & .form__control.error small{
+      visibility: visible;
+    }
+
+    & .form__control--texto {
+      width: 92%;
+      min-width: 92%;
+
+      & textarea {
+        border-radius: 8px;
+        border: 1px solid #cfcbcb7c;
+        padding: 1rem;
+        font-family: "Josefin Sans", sans-serif;
+        width: 100%;
+        min-width: 100%;
+        resize: none;
+      }
+    }
+
+    & .form__control--acepto {
+      font-family: "Josefin Sans", sans-serif;
+      width: 100%;
+      display: flex;
+      border: none;
+      margin-top: 0.5rem;
+
+      & label {
+        width: 68%;
+      }
+
+      & input {
+        width: 5%;
+      }
+    }
+
+    & button {
+      width: 94%;
+      background-color: #202020;
+      padding: 1rem;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+		& button:hover {
+      scale: 1.01;
+      background-color: #0f0f0f;
+      
+    }
+  }
+
+  & form::before {
+    content: url(/imagenes/Cafe/contacto.png);
+    position: absolute;
+    filter: drop-shadow(4px 4px 15px #a09e9e71);
+    top: 0%;
+    left: 100%;
+    z-index: 2;
+  }
+
+  & form::after {
+    content: url(/imagenes/Cafe/reflejo.png);
+    position: absolute;
+    top: 70%;
+    left: 100%;
+    z-index: 0;
+  }
+
+  & figure {
+    width: 30%;
+    height: auto;
+
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
