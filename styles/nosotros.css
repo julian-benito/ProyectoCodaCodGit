@@ -130,6 +130,7 @@
     }
 
     & .nosotros__text {
+      box-sizing: border-box;
       width: 90%;
       padding: 3rem 2rem 2rem 3rem;
     }
