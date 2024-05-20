@@ -219,6 +219,7 @@ aside {
 
       & img {
         width: 20px;
+        margin-right: 4px;
       }
     }
   
@@ -235,6 +236,7 @@ aside {
       z-index: 3;
       background-color: #e9e5e5de;
       padding-left: 1rem;
+
     }
   }
   

@@ -108,6 +108,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (filtersInputs.style.display === 'none') {
             filtersInputs.style.display = 'flex';
             filterBtn.src = '/Imagenes/iconos/cerrar.png';
+            filterBtn.style.width = '17px';
+            filterBtn.style.height = '17px';
         } else {
             filtersInputs.style.display = 'none';
             filterBtn.src = '/Imagenes/iconos/sliders.png'

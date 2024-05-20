@@ -101,3 +101,21 @@ nextButton.addEventListener('click', function () {
 });
 
 
+/* Cambio de logo al hacer hover */
+
+const logo = document.getElementById('logo');
+
+const logoNegro = '/imagenes/iconos/icono3.png';
+const logoMarron = '/imagenes/iconos/iconoweb.png';
+
+function cambiarUrlHover() {
+    logo.src = logoMarron;
+}
+
+function restaurarUrlOriginal() {
+    logo.src = logoNegro;
+}
+
+logo.addEventListener('mouseover', cambiarUrlHover);
+logo.addEventListener('mouseout', restaurarUrlOriginal);
+
