@@ -14,7 +14,7 @@
 }
 
 aside {
-  width: 12vw;
+  width: 14vw;
   min-width: 120px;
   height: auto;
   padding: 0.5rem;
@@ -62,10 +62,10 @@ aside {
 
 .tienda__products {
   box-sizing: border-box;
-  width: 85vw;
+  width: 100%;
   margin: 0 auto;
-  padding: 3rem;
-  gap: 2rem;
+  padding: 3rem 0;
+  gap: 1rem;
 
   display: flex;
   flex-wrap: wrap;
@@ -76,7 +76,7 @@ aside {
     padding: 0.9rem 0 0 0;
     min-width: 160.84px;
     min-height: 190.44px;
-    width: 20%;
+    width: 22%;
     height: auto;
     display: flex;
     flex-direction: column;
@@ -148,8 +148,10 @@ aside {
 }
 
 .tienda__carrito{
-  width: 12vw;
+  box-sizing: border-box;
+  width: 14vw;
   background-color: #caaa66;
+  padding: 0.9rem;
 
   & h2 {
     font-family: "Josefin Sans", sans-serif;
@@ -160,7 +162,7 @@ aside {
   & ul {
     list-style: none;
     font-family: "Josefin Sans", sans-serif;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     margin-top: 1rem;
     background-color: #caaa66;
   }
@@ -170,7 +172,7 @@ aside {
 
     & h3 {
       font-family: "Josefin Sans", sans-serif;
-      font-size: 1.3rem;
+      font-size: 1rem;
       margin-top: 2.5rem;
       margin-bottom: 1rem;
     }
@@ -178,11 +180,12 @@ aside {
     & button {
       font-family: "Josefin Sans", sans-serif;
       background-color: #202020;
-      padding: 1rem;
+      padding: 0.3rem 1rem;
+      font-family: 0.9rem;
       color: white;
       margin-bottom: 1rem;
       border-radius: 18px;
-      width: 100%;
+      width: 95%;
     }
   }
 }
@@ -258,6 +261,24 @@ aside {
           padding: 0 0.4rem;
           font-size: 8px;
         }
+      }
+    }
+  }
+
+  .tienda__carrito{
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+  
+  
+    & div {
+  
+      & button {
+        padding: 0.7rem 0.7rem;
+        font-family: 0.9rem;
+        margin-bottom: 1rem;
+        width: 35%;
+        display: block;
       }
     }
   }
