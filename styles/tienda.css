@@ -216,13 +216,25 @@ aside {
       margin-top: 0;
       font-family: Inter;
       font-size: 140%;
+
+      & img {
+        width: 20px;
+      }
     }
   
     & .filters__inputs {
       display: none;
       flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
       gap: 3rem;
       margin-top: 2rem;
+      position: absolute;
+      right: 0;
+      top: 50%;
+      z-index: 3;
+      background-color: #e9e5e5de;
+      padding-left: 1rem;
     }
   }
   

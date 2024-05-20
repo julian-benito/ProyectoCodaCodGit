@@ -97,4 +97,20 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   
     actualizarCarrito();
+
+
+    /* Barra filtros responsive */ 
+
+    const filterBtn = document.getElementById('filterBtn');
+    const filtersInputs = document.querySelector('.filters__inputs');
+
+    filterBtn.addEventListener('click', function() {
+        if (filtersInputs.style.display === 'none') {
+            filtersInputs.style.display = 'flex';
+            filterBtn.src = '/Imagenes/iconos/cerrar.png';
+        } else {
+            filtersInputs.style.display = 'none';
+            filterBtn.src = '/Imagenes/iconos/sliders.png'
+        }
+    });
   });
