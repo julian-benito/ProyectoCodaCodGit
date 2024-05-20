@@ -161,7 +161,7 @@
     & .product__carrousel {
       & a {
         box-shadow: 1px 1px 4px rgba(64, 95, 230, 0.952);
-        background-color: #171ad1;
+        background-color: #1518aa;
       }
     }
   }
@@ -173,7 +173,7 @@
     & .principal {
       & h3 {
         text-shadow: 4px 4px 4px 4px rgba(26, 34, 138, 0.788);
-        color: #171ad1;
+        color: #1518aa;
       }
     }
   }
@@ -185,7 +185,7 @@
     & .product__carrousel {
       & a {
         box-shadow: 1px 1px 4px rgba(167, 73, 73, 0.952);
-        background-color: #d61212;
+        background-color: #b41616;
       }
     }
   }
@@ -197,7 +197,7 @@
     & .principal {
       & h3 {
         text-shadow: 4px 4px 4px 4px rgba(145, 35, 35, 0.788);
-        color: #d61212;
+        color: #b41616;
       }
     }
   }
@@ -208,8 +208,8 @@
   & .derecha {
     & .product__carrousel {
       & a {
-        box-shadow: 1px 1px 4px rgba(142, 148, 55, 0.952);
-        background-color: #8b8a20;
+        box-shadow: 1px 1px 4px rgba(153, 125, 47, 0.952);
+        background-color: #97671f;
       }
     }
   }
@@ -221,7 +221,7 @@
     & .principal {
       & h3 {
         text-shadow: 4px 4px 4px 4px rgba(144, 156, 37, 0.788);
-        color: #8b8a20;
+        color: #97671f;
       }
     }
   }
@@ -410,14 +410,14 @@
     }
 
     & .card__carrousel--4 {
-      background-color: #aaa95e;
+      background-color: #b39432;
 
       & h3 {
-        color: #a08907;
+        color: #97671f;
       }
 
       & button {
-        background-color: #a08907;
+        background-color: #97671f;;
       }
     }
 
