@@ -14,6 +14,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <script src="/js/index.js" defer></script>
+  <script src="/js/carrito.js" defer></script>
 </head>
 
 <body>
@@ -101,7 +102,7 @@
             <div class="card__price">
 
               <h6>$500</h6>
-              <button>Añadir</button>
+              <button class="agregar-carrito" data-nombre="Blue Mountain" data-precio="500">Añadir</button>
 
             </div>
           </div>
@@ -121,7 +122,7 @@
             <div class="card__price">
 
               <h6>$500</h6>
-              <button>Añadir</button>
+              <button class="agregar-carrito" data-nombre="Supremo" data-precio="500">Añadir</button>
 
             </div>
           </div>
@@ -141,7 +142,7 @@
             <div class="card__price">
 
               <h6>$500</h6>
-              <button>Añadir</button>
+              <button class="agregar-carrito" data-nombre="Antigua" data-precio="500">Añadir</button>
 
             </div>
           </div>
@@ -161,7 +162,7 @@
             <div class="card__price">
 
               <h6>$500</h6>
-              <button>Añadir</button>
+              <button class="agregar-carrito" data-nombre="Yirgacheffe" data-precio="500">Añadir</button>
 
             </div>
           </div>
@@ -181,7 +182,7 @@
             <div class="card__price">
 
               <h6>$500</h6>
-              <button>Añadir</button>
+              <button class="agregar-carrito" data-nombre="Santos" data-precio="500">Añadir>Añadir</button>
 
             </div>
           </div>
@@ -201,7 +202,7 @@
             <div class="card__price">
 
               <h6>$500</h6>
-              <button>Añadir</button>
+              <button class="agregar-carrito" data-nombre="Mandheling" data-precio="500">Añadir</button>
 
             </div>
           </div>
@@ -221,7 +222,7 @@
             <div class="card__price">
 
               <h6>$500</h6>
-              <button>Añadir</button>
+              <button class="agregar-carrito" data-nombre="Tarrazú" data-precio="500">Añadir</button>
 
             </div>
           </div>
@@ -229,6 +230,18 @@
         </div>
 
       </article>
+
+      <aside class="tienda__carrito">
+        <h2>Carrito de Compras</h2>
+        <ul id="carrito-lista">
+          <!-- aca van los productos del carrito -->
+        </ul>
+        <div id="carrito-total">
+          <h3>Total: $0</h3>
+          <button id="vaciar-carrito">Vaciar Carrito</button>
+          <button id="realizar-pedido">Realizar Pedido</button>
+        </div>
+      </aside>
 
     </div>
   </section>
